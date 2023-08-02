@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOKA</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/hoka.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="icon" href="images/favicon32.png">
+</head>
+<body>
+    <div class="searchPanel">
+        <input type="button" value="close" class="btn_close material-icons">
+        <input type="search" placeholder="Start typing What you're looking for" title="Start typing What you're looking for">
+    </div>
+    <div class="emptyCartPanel">
+        <input type="button" value="close" class="btn_close material-icons">
+        <p>Your bag is currently empty</p>    
+    </div>
+    <div class="CartPanel">
+        <input type="button" value="close" class="btn_close material-icons">
+        <form action="checkout.html">
+            <ol>
+                <li>               
+                    <img src="images/cartImg_01.png" alt="product">
+                    <div>
+                        <small>Men's</small>
+                        <span>
+                            <strong>Bondi 8</strong>
+                            <em>$165.00</em>
+                        </span>
+                        <span>
+                            <mark>Color: CASTLEROCK / FIESTA</mark>
+                            <input type="button" value="REMOVE">
+                        </span>
+                    </div>
+                </li>
+            </ol>   
+            <div>
+                Subtotal:
+                <strong>$165.00</strong>
+            </div>
+            <input type="submit" value="Checkout">
+        </form>
+    </div>
+    <div class="logoutAccPanel">
+        <input type="button" value="close" class="btn_close material-icons">
+        <span>
+            <a href="account_myPage.html">Personal Information</a>
+            <a href="footer_customCare_20_orderStatus.html">Orders</a>
+        </span>
+        <span>
+            <a href="index.html">Logout</a>
+            <a href="account_myPage.html">My account</a>
+        </span>
+    </div>
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo">
+            </a>
+        </h1>
+        <button class="mui">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="shoefinder.html">Shoe Finder</a></li>
+                <li>
+                    <strong>
+                        Women
+                    </strong>
+                    <ol>
+                        <li>
+                            <a href="li_W_All.html">
+                                <img src="images/womenGnb_01.png" alt="womenFootwear">
+                            </a>
+                            <p>
+                                <strong>All Footwear</strong>
+                                Discover all avilable styles.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="li_W_New.html">
+                                <img src="images/womenGnb_02.png" alt="womenNewIn">
+                            </a>                            
+                            <p>
+                                <strong>New in</strong>
+                                The latest additions.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="li_W_Running.html">
+                                <img src="images/womenGnb_03.png" alt="womenRunning">
+                            </a>
+                            <strong>Running</strong>
+                        </li>
+                        <li>
+                            <a href="li_W_Hiking.html">
+                                <img src="images/womenGnb_04.png" alt="womenHiking">
+                            </a>
+                            <strong>Hiking</strong>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Men</strong>
+                    <ol>
+                        <li>
+                            <a href="li_M_All.html">
+                                <img src="images/menGnb_01.png" alt="manFootwear">
+                            </a>
+                            <p>
+                                <strong>All Footwear</strong>
+                                Discover all avilable styles.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="li_M_New.html">
+                                <img src="images/menGnb_02.png" alt="menNewin">
+                            </a>
+                            <p>
+                                <strong>New In</strong>
+                                The latest additions.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="li_M_Running.html">
+                                <img src="images/menGnb_03.png" alt="menRunning">
+                            </a>
+                            <strong>Running</strong>
+                        </li>
+                        <li>
+                            <a href="li_M_Hiking.html">
+                                <img src="images/menGnb_04.png" alt="menHiking">
+                            </a>
+                            <strong>Hiking</strong>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <strong>Explore</strong>
+                    <ol>
+                        <li>
+                            <b>Featured</b>
+                            <a href="about_FlyHumanfly.html">FLY HUMAN FLYTM Film</a>
+                            <a href="collabo_Utmb.html">UTMB</a>
+                        </li>
+                        <li>
+                            <b>About</b>
+                            <a href="about_Story.html">Our Story</a>
+                            <a href="about_Impact.html">Our Impact</a>
+                            <a href="about_flyHumanfly.html">FLY HUMAN FLYTM Film</a>
+                            <a href="about_Technology.html">Technology</a>
+                        </li>
+                        <li>
+                            <b>Stories</b>
+                            <a href="Stories_Blog.html">Blog</a>
+                            <a href="Stories_humansofHoka.html">Humans of HOKA</a>
+                            <a href="https://www.youtube.com/user/HOKAONEONE">HOKA TV</a>
+                        </li>
+                        <li>
+                            <b>Partnerships</b>
+                            <a href="collabo_Ironman.html">HOKA x IRONMAN®</a>
+                            <a href="collabo.html">HOKA x Collaborations</a>
+                        </li>
+                        <li>
+                            <b>Join Us</b>
+                            <a href="storeLocator.html">Find a Store</a>
+                            <a href="https://events.hoka.com/">Events</a>
+                            <a href="https://www.deckers.com/careers">Careers</a>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+            <div>
+                <input type="button" value="Search" data-panel="searchPanel">
+                <input type="button" value="Cart" data-panel="CartPanel">
+                <input type="button" value="My account" data-panel="logoutAccPanel">
+            </div>
+                </nav>
+    </header>
+    <section class="policyContainer">
+        <aside>
+            <a href="#" class="btnBack">Return</a>
+        </aside>
+        <div>
+            <h2>Privacy policy</h2>
+            <p>
+                We are part of the Deckers Outdoor Corporation family, which includes the following brands: UGG®, KOOLABURRA ® By UGG®, Teva®, Sanuk®, Hoka ONE ONE® and Deckers Lab® 
+                (for purposes of this policy, all of our entities and brands are referred to as "Deckers").
+            </p>
+            <p>
+                Deckers values your privacy. In this Privacy Policy ("Policy"), we describe how we collect, use, and disclose information that we obtain about visitors to this website, as well as our other 
+                websites (collectively, the "Site") and the services available through our Site (collectively, the "Services"). Some features and functionalities (e.g. the ability to make purchases) are not 
+                available on all of our websites; please contact us if you have any questions.
+            </p>
+            <p>
+                By visiting the Site, or using any of our Services, you agree that your personal information will be handled as described in this Policy. Your use of our Site or Services, and any dispute 
+                over privacy, is subject to this Policy and our Terms of Service (available on this website), including its applicable limitations on damages and the resolution of disputes. The Terms of 
+                Service are incorporated by reference into this Policy.
+            </p>
+            <mark>
+                What information do we collect about you?
+            </mark>
+            <p>
+                We collect information directly from users, such as when they sign up to receive special offers from us or register for an account with us. We also collect certain information 
+                automatically through your use of our Site or Services. We also collect information about you from third parties.
+            </p>
+            <mark>
+                Information you provide
+            </mark>
+            <p>
+                We collect information that you enter on our Site or provide to us in any other way. We collect information from you when you make a purchase from us, create an account 
+                (offered as a convenience to customers but not required), request information, submit a review, or otherwise contact us. The type of information that we collect from you depends on 
+                your interaction with our Site and your use of our Services, but may include: full name, mailing address, billing address, telephone number, email address, payment information 
+                (for purchases), social media account name, social media account handle, birth month, gender, age range, location data, and any other information that you choose to provide.
+            </p>
+            <mark>
+                Information we collect automatically
+            </mark>
+            <p>
+                We automatically collect the following information about your device and your use of our Site or Services through cookies, web beacons, and other technologies: your domain name; 
+                your browser type and operating system; web pages you view; links you click; your IP address, MAC address, Unique Device Identifiers (UID), and other persistent identifiers; the length 
+                of time you visit our Site and or use our Services; and the referring URL, or the webpage that led you to our Site. We use this information to monitor and improve the Site and Services, 
+                enhance your online shopping experience and to enable us to provide you with an easier and more personalized experience and level of service. On some of our Sites, we may 
+                combine this information with personal information that you have provided to us. Please see the section "How Do We Use Cookies and Other Tracking Mechanisms" below for more 
+                information.
+            </p>
+            <mark>
+                What about children on our sites?
+            </mark>
+            <p>
+                Our Site and Services are not designed for persons under 18. We do not knowingly collect personal information from children under the age of 13. If we become aware that we have 
+                inadvertently received personal information from a child under the age of 13, we will delete such information from our records.
+            </p>
+            <mark>
+                How do we use your information?
+            </mark>
+            <p>
+                We use the information, including personal information, alone or in combination with other information that we may collect about you, including information from third parties, for the 
+                following purposes that are necessary for the performance of the contract between us to provide you with the products or services you requested or that we consider in our legitimate 
+                interests:
+            </p>
+            <ul>
+                <li>
+                    To allow you to create an account, to fulfill your orders, or otherwise provide our Services to you.        
+                </li>
+                <li>
+                    To communicate with you (including via email), such as to respond to your requests/inquiries and for other customer service purposes.
+                </li>
+                <li>
+                    To manage your participation in our loyalty program and provide you with the benefits of the loyalty program.
+                </li>
+                <li>
+                    To better understand how users access and use our Site and Services, both on an aggregated and individualized basis, to maintain, support, and improve our Site and Services, to 
+                    respond to user preferences, and for research and analytical purposes.
+                </li>
+            </ul>
+            <p>
+                Based on your voluntary consent:
+            </p>
+            <ul>
+                <li>
+                    To tailor the content and information that we may send or display to you, to offer location customization, and personalized help and instructions, and to otherwise personalize your 
+                    experiences while using the Site or our Services.      
+                </li>
+                <li>
+                    Where permitted, for marketing and promotional purposes. For example, in accordance with applicable law and with your consent, we will use your email address to send you news 
+                    and newsletters, special offers, and promotions, and to contact you about products or information (offered by us or in conjunction with third parties) we think may interest you. We 
+                    also may use your information to assist us in advertising our Services on third party platforms, including websites and through social media. You have the right to withdraw your 
+                    consent at any time as noted below
+                </li>
+                <li>
+                    Where permitted, for traditional mail marketing. From time to time, we may use your information for traditional mail marketing purposes. To opt-out of such postal mail, please 
+                    contact Customer Service at the applicable email address listed below. If you opt-out of direct mail, we will continue to use your mailing address for transactional and information 
+                    purposes such as regarding your account, your purchases and your inquiries.
+                </li>
+            </ul>
+            <p>
+                To comply with our legal obligations:
+            </p>
+            <ul>
+                <li>
+                    To Protect Us and Others. We release account and other information about you when we believe release is appropriate to comply with the law, a judicial proceeding, court order, or 
+                    other legal process, such as in response to a subpoena; to enforce or apply our Terms of Use, this Policy, and other agreements; to protect our rights, safety, or property, our users, 
+                    and others; as evidence in litigation in which we are involved; when appropriate to investigate, prevent, or take action regarding illegal activities, suspected fraud, or situations 
+                    involving potential threats to the safety of any person. This includes exchanging information with other companies and organizations for fraud protection and credit risk reduction.          
+                </li>
+            </ul>
+            <mark>
+                Does deckers share the information it collects about you?
+            </mark>
+            <p>
+                We may share the information that we collect about you, with third parties worldwide, as follows:
+            </p>
+            <ul>
+                <li>
+                    Service Providers/Agents. We disclose your information to third parties, including service providers, independent contractors, and affiliates that perform functions on our behalf. 
+                    Examples include: fulfilling orders, delivering packages, sending postal mail and email, removing repetitive information from customers lists, analyzing data, providing marketing and 
+                    advertising assistance, third party advertising and analytics companies who collect browsing information and profiling information and who can provide advertisements which are 
+                    tailored to your interests, providing search results and links (including paid listings and links), and credit card links. We only provide these entities with the information necessary for 
+                    them to perform these services and functions on our behalf. These entities are contractually required to protect your personal information from unauthorized access, use, or 
+                    disclosure.        
+                </li>
+                <li>
+                    Trading Partners. Our product lines are offered internationally in conjunction with select international trading partners. Our trading partners' use of your personal information is 
+                    subject to this Policy.
+                </li>
+                <li>
+                    Affiliates. We may disclose the information we collect from you to our affiliates or subsidiaries for their own marketing, research, and other purposes.
+                </li>
+                <li>
+                    Non-Affiliated Third Parties. We do not share your personal information with non-affiliated third parties for their own marketing purposes.
+                </li>
+            </ul>
+            <p>
+                We also may share your information in the following situations:
+            </p>
+            <ul>
+                <li>
+                    Business Transfers. If we are acquired by or merged with another company, if substantially all of our assets are transferred to another company, or as part of a bankruptcy 
+                    proceeding, we may transfer the information we have collected from you to the other company. You will have the opportunity to opt out of any such transfer if, in our discretion, it 
+                    will result in the handling of your information in a way that differs materially from this Privacy Policy.        
+                </li>
+                <li>
+                    Aggregate and De-Identified Information. We may share aggregate or de-identified information about users with third parties for marketing, advertising, research or similar purposes.
+                </li>
+            </ul>
+            <p>
+                Deckers Brands does not sell customer data to third parties.
+            </p>
+            <mark>
+                California residents - your privacy rights
+            </mark>
+            <p>
+                If you are a California resident, the California Consumer Privacy Act ( “CCPA”) gives you additional rights about the collection, processing and sale of your personal information, which 
+                are explained below.     
+            </p>
+            <p>
+                Personal Information Collected We only collect the following categories of personal information:
+            </p>
+            <ul>
+                <li>
+                    Identifiers;       
+                </li>
+                <li>
+                    Characteristics of protected classifications under California and federal law (i.e. gender);
+                </li>
+                <li>
+                    Geolocation data;
+                </li>
+                <li>
+                    Internet/electronic activity;
+                </li>
+                <li>
+                    Commercial information (i.e. products purchased or viewed on our Site); and
+                </li>
+                <li>
+                    Inferences drawn from the categories described above in order to create a profile about you to reflect your preferences, characteristics, behavior and attitudes.
+                </li>
+            </ul>
+            <p>
+                The specific pieces of personal information that we collect are set out in the “What Information Do We Collect About You?” Section above. We will not collect additional categories of 
+                personal information or use personal information collected for additional purposes without providing you with notice.     
+            </p>
+            <p>
+                Purposes for Use of your Information In order to learn about how we use your personal information, see the “ How Do We Use Your Information?” Section above.
+            </p>
+            <p>
+                Personal Information Disclosed for Business Purposes We disclose the following categories of personal information for business purposes, for example, with our service providers as 
+                discussed above:
+            </p>
+            <ul>
+                <li>
+                    Identifiers;         
+                </li>
+                <li>
+                    Characteristics of protected classifications under California and federal law (i.e. gender);
+                </li>
+                <li>
+                    Geolocation data;
+                </li>
+                <li>
+                    Internet/electronic activity;
+                </li>
+                <li>
+                    Commercial information (i.e. products purchased or viewed on our Site); and
+                </li>
+                <li>
+                    Inferences drawn from the categories described above in order to create a profile about you to reflect your preferences, characteristics, behavior and attitudes.
+                </li>
+            </ul>
+            <p>
+                For more information, see the “Does Deckers Share the Information It Collects About You?” Section above.        
+            </p>
+            <p>
+                Your Rights Additionally, you have the following rights under the CCPA. Instructions on how to exercise each right are listed below. You may only exercise each right up to two times in 
+                any twelve (12) month period. To exercise more than one right or to submit more than one email address, please submit each request individually. If you submit multiple requests, we 
+                cannot guarantee the order in which your requests will be processed:
+            </p>
+            <ol>
+                <li>
+                    <p>
+                        <b>Right to Know:</b> You have the right to know what categories of personal information we collected in the preceding twelve (12) months, including the categories of sources from which 
+                        the personal information was collected, the specific pieces of personal information we have collected about you, and the business or commercial purposes for which such personal 
+                        information was collected and shared. You also have the right to know the categories of personal information which were disclosed for business purposes, and the categories of third 
+                        parties with whom we shared your personal information in the preceding twelve (12) months.         
+                    </p>       
+                    <p>
+                        To exercise your right to know, you may call 866-998-7826 or email us at privacy-compliance@deckers.com and follow these instructions:
+                    </p>
+                    <ul>
+                        <li>
+                            Include “Right to Know Under CCPA” in the subject of the email and        
+                        </li>
+                        <li>
+                            Please include sufficient personal information for us to locate your records and to verify the identity affiliated with your account. At a minimum, you must provide the full name and 
+                            email address affiliated with your account. We may request additional information to complete the verification process if we are unable to verify your identity initially. Our ability to 
+                            locate your personal information is limited by the accuracy and the completeness of the information that you provide.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>
+                        <b>Right to Access:</b> You have the right to receive the personal information that you gave us. The information that we will provide to you will be masked, meaning that portions of it will 
+                        be omitted so that it can't be used fraudulently. For example, your telephone number may display as (123)-XXX-XX567. In order to exercise your right to access, you may call 
+                        866-998-7826 or email us at privacy@deckers.com and follow these instructions:       
+                    </p>
+                    <ul>
+                        <li>
+                            Write to us from the email address that is affiliated with your account and include “Right to Access Personal Information Under CCPA” in the subject of the email or written request; 
+                            and        
+                        </li>
+                        <li>
+                            Please include sufficient personal information for us to locate your records and to verify the identity affiliated with your account. At a minimum, you must provide the full name and 
+                            email address affiliated with your account. We may request additional information to complete the verification process if we are unable to verify your identity initially. Our ability to 
+                            locate your personal information is limited by the accuracy and the completeness of the information that you provide. For example, if you use multiple email addresses and you 
+                            include only one in your request, we may only locate the information associated with the email address that you included in the request.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>
+                        <b>Deletion:</b> You can request to have your personal information deleted from our systems and we will ask our service providers to do the same.        
+                    </p>
+                    <p>
+                        Consequences of Deletion: Please note that if we delete your personal information, many of our Services will not work the same. For example, you will no longer be able to make an 
+                        unreceipted return, you will lose your loyalty account and points, and you will not have an account (because any prior login information and saved transaction data will be deleted) and 
+                        so your shopping cart items and save addresses and other information will no longer be available. If you make multiple requests under this section, we recommend sending your 
+                        deletion request last, as we will not be able to fulfill your other requests once we have deleted your information.       
+                    </p>
+                    <p>
+                        Exceptions: We may not be able to fulfill your request if we (or our service providers) are required to retain your personal information for one or more of the following reasons:           
+                    </p>
+                    <ul>
+                        <li>
+                            Transactional: to complete a transaction for which the personal information was collected, provide a good or service requested by you, or perform a contract we have with you;          
+                        </li>
+                        <li>
+                            Security: to detect data security incidents;
+                        </li>
+                        <li>
+                            Error Correction: to debug or repair any errors;
+                        </li>
+                        <li>
+                            Legal: to protect against fraud or illegal activity or to comply with applicable law or a legal obligation, or exercise rights under the law, such as the right to free speech; or
+                        </li>
+                        <li>
+                            Internal Use: to use your personal information, internally, in a lawful manner that is compatible with the context in which you provided the information (i.e. to improve our services).
+                        </li>
+                    </ul>
+                    <p>
+                        In order to exercise your right to deletion, call us at 866-998-7826 or email us at privacy@deckers.com using the email address affiliated with your account and follow these 
+                        instructions:      
+                    </p>
+                    <ul>
+                        <li>
+                            In the subject of you request, please write “Right to Deletion Under CCPA”;          
+                        </li>
+                        <li>
+                            Please include sufficient personal information for us to locate your records and to verify the identity affiliated with your account. At a minimum, you must provide the full name and 
+                            email address affiliated with your account. We may request additional information to complete the verification process if we are unable to verify your identity initially. Our ability to 
+                            locate your personal information is limited by the accuracy and the completeness of the information that you provide. For example, if you use multiple email addresses and you 
+                            include only one in your request, we may only delete the email address that you included in the request.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>
+                        <b>Non-Discrimination:</b> We will not discriminate against you for exercising any of your rights under CCPA and we will not deny you good or services, charge you a different price, or 
+                        provide you with a lesser quality of goods or services if you exercise any of your rights.               
+                    </p>
+                </li>
+            </ol>
+            <mark>
+                How do we use cookies and other tracking mechanisms?
+            </mark>
+            <p>
+                We use cookies and other tracking mechanisms to track information about your use of our Site or Services. Doing so enables us to analyze use of and improve our Site and Services, to 
+                enhance your online shopping experience and to offer a more personalized level of service. We may combine this information with other personal information we collect from you. 
+                Please click here for additional information about the specific cookies and other tracking tools that we use on our European Union facing websites.
+            </p>
+            <mark>
+                How do we use third party analytics and tracking?
+            </mark>
+            <p>
+                We use automated devices and applications, such as Google Analytics, to evaluate usage of our Site. We also may use other analytic means to evaluate our Site and Services. We use 
+                these tools to help us improve our Site, Services, performance and user experiences. These entities may use cookies and other tracking technologies to perform their services.
+            </p>
+            <p>
+                Google Analytics. This website uses Google Analytics, a web analytics service provided by Google, Inc. ("Google"). Google Analytics uses cookies, which are text files placed on your 
+                computer, to help the website analyze how users use the site. The information generated by the cookie about your use of the website (including your IP address) will be transmitted to 
+                and stored by Google on servers in the United States. In case of activation of the IP anonymization, Google will truncate/anonymize the last octet of the IP address for Member States 
+                of the European Union as well as for other parties to the Agreement on the European Economic Area. Only in exceptional cases, the full IP address is sent to and shortened by Google 
+                servers in the USA. On behalf of the website provider Google will use this information for the purpose of evaluating your use of the website, compiling reports on website activity for 
+                website operators and providing other services relating to website activity and internet usage to the website provider. Google will not associate your IP address with any other data 
+                held by Google. You may refuse the use of cookies by selecting the appropriate settings on your browser. However, please note that if you do this, you may not be able to use the full 
+                functionality of this website.        
+            </p>
+            <p>
+                You can refuse the use of Google Analytics and opt out of having your information used by Google Analytics by visiting https://tools.google.com/dlpage/gaoptout/. An opt-out cookie 
+                will be set on the computer, which prevents the future collection of your data when visiting this website. Further information concerning the terms and conditions of use and data 
+                privacy can be found at:      
+            </p>
+            <p>
+                Please note that on this website, Google Analytics code is supplemented by Google, Inc. ("Google") to ensure an anonymized collection of IP addresses (so called IP-masking).         
+            </p>
+            <p>
+                Facebook, Twitter, and Other Social Media Services. We may also use platforms provided by companies such as Facebook and Twitter to offer you interest-based ads. These platforms 
+                allow us to personalize the ads that we display to you through their services. We may convert your email address into a unique value which can be matched by our partner company 
+                with a user on their platform to allow us to serve you interest-based advertising to those matched users. Although we do not provide any personal information to these platform 
+                vendors, they may gain insights about individuals who respond to the ads we serve. Many of these platforms provide you with the ability to opt out of or limit the display of these ads. 
+                For information on how to do so, please check your account settings on and the information provided by these services.         
+            </p>
+            <p>
+                For more information on how third parties use their own tracking mechanisms and options for opting out of them, please refer to the "What About Third Party Advertisers?" Sections 
+                below.         
+            </p>
+            <mark>
+                What about third-party advertisers?
+            </mark>
+            <p>
+                We use third parties such as network advertisers and other third parties to assist us in advertising, including displaying our advertisements on other websites and through social media 
+                platforms; we also may use network advertisers and other third parties to assist us in identifying relevant advertising on our Sites. Network advertisers are third parties that display 
+                advertisements based on your visits to our Site as well as other websites. This enables us and these third parties to target advertisements by displaying ads for products and services in 
+                which you might be interested. Third party ad network providers, advertisers, sponsors and/or traffic measurement services may use cookies, JavaScript, web beacons 
+                (including clear GIFs), Flash LSOs and other technologies to measure the effectiveness of their ads and to personalize advertising content to you. These third party cookies and other 
+                technologies are governed by each third party's specific privacy policy, not this one. We may provide these third-party advertisers with information about your usage of our Site and 
+                our services, as well as aggregate or non-personally identifiable information about visitors to our Site and users of our service.
+            </p>
+            <p>
+                Our systems do not honor browser do-not-track requests, but several of these third parties enable you to opt out of targeted advertising practices. You may opt-out of many third-party 
+                ad networks, including those operated by members of the Network Advertising Initiative ("NAI") and the Digital Advertising Alliance ("DAA"), and in Europe, the European Interaction 
+                Digital Advertising Alliance ("EIDAA"). For more information regarding this practice by NAI members and DAA members, and your choices regarding having this information used by 
+                these companies, including how to opt-out of third-party ad networks operated by NAI, DAA and EIDAA members, please visit their respective websites: www.networkadvertising.org/
+                optout_nonppii.asp (NAI), www.aboutads.info/choices (DAA), and www.youronlinecoices.com.        
+            </p>
+            <p>
+                Opting out of one or more NAI, EIDAA or DAA member networks (many of which will be the same) only means that those members no longer will deliver targeted content or ads to you. 
+                It does not mean you will no longer receive any targeted content or ads on our Site or other websites. You may continue to receive advertisements, for example, based on the 
+                particular website that you are viewing. Also, if your browsers are configured to reject cookies when you visit this opt-out page, or you subsequently erase your cookies, use a different 
+                computer or change web browsers, your NAI, EIDAA or DAA opt-out may no longer be effective. Additional information is available on NAI's, EIDAA's and DAA's websites accessible by 
+                the above links.
+            </p>
+            <mark>
+                What about third-party links?
+            </mark>
+            <p>
+                Our Site and Services may contain links to third-party websites. Any access to and use of such linked websites is not governed by this Policy, but instead is governed by the privacy 
+                policies of those third party websites. We do not exercise control over such third party websites and are not responsible for the information practices of such third party websites. You 
+                access such third party websites or content at your own risk. You should always read the privacy policy of a third party website before providing any information to the website.
+            </p>
+            <mark>
+                Am i allowed to post to your site?
+            </mark>
+            <p>
+                We like hearing from our customers. We invite you to post your comments, such as your reviews of our products, pictures, videos, and other information that you would like to be 
+                available on our Site. If you post content to our Site, all of the information that you post will be available to all visitors to our Site, along with your chosen reviewer name and 
+                city/state/country (as applicable). If you post your own content on our Site or Services, your posting may become public and we cannot prevent such information from being used in a 
+                manner that may violate this Policy, the law, or your personal privacy.
+            </p>
+            <mark>
+                How secre is my personal information?
+            </mark>
+            <p>
+                We have implemented commercially reasonable precautions to protect the information we collect from loss, misuse, and unauthorized access, disclosure, alteration, and destruction, 
+                in accordance with industry practice and applicable laws. Please be aware that despite our best efforts, no data security measures can guarantee 100% security. While we strive to 
+                protect information transmitted on or through our Site and Services, we cannot and do not guarantee the security of any information you transmit on or through the Site and Services, 
+                and you do so at your own risk.
+            </p>
+            <p>
+                You should take steps to protect against unauthorized access to your password, phone, and computer by, among other things, signing off after using a shared computer, choosing a 
+                robust password that nobody else knows or can easily guess, and keeping your log-in and password private. We are not responsible for any lost, stolen, or compromised passwords or 
+                for any activity on your account via unauthorized password activity, except where otherwise required by applicable law.
+            </p>
+            <mark>
+                Can i access, update, correct, or delete my personal information?
+            </mark>
+            <p>
+                You have the right to access and correct, and in some case delete, the personal information that we hold about you. If you created an account with us, you may access, update, and 
+                correct the information that you have submitted to us by logging into your account. If you made a purchase as a guest, or if would like to delete the information that you submitted to 
+                us, please use this form to send your request to us online or contact our respective Customer Service Departments at the following email addresses:
+            </p>
+            <div>
+                <table>
+                    <caption>Brand Table</caption>
+                    <thead>
+                        <tr>
+                            <th>Brand</th>
+                            <th>Region</th>
+                            <th>Email address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>UGG</td>
+                            <td>U.S.</td>
+                            <td>infougg@deckers.com</td>
+                        </tr>
+                        <tr>
+                            <td>UGG</td>
+                            <td>U.K.</td>
+                            <td>customerservicesuk@ugg.com</td>
+                        </tr>
+                        <tr>
+                            <td>UGG</td>
+                            <td>France</td>
+                            <td>serviceclient@ugg.com</td>
+                        </tr>
+                        <tr>
+                            <td>UGG</td>
+                            <td>Netherlands</td>
+                            <td>customerservicesnl@ugg.com</td>
+                        </tr>
+                        <tr>
+                            <td>UGG</td>
+                            <td>Germany</td>
+                            <td>kundendienst@ugg.com</td>
+                        </tr>
+                        <tr>
+                            <td>UGG</td>
+                            <td>E.U.</td>
+                            <td>customerservicesuk@ugg.com</td>
+                        </tr>
+                        <tr>
+                            <td>UGG</td>
+                            <td>Italy</td>
+                            <td>serviziodiassistenza@ugg.com</td>
+                        </tr>
+                        <tr>
+                            <td>UGG</td>
+                            <td>Japan</td>
+                            <td>customer_service_jp@deckers.com</td>
+                        </tr>
+                        <tr>
+                            <td>UGG</td>
+                            <td>China</td>
+                            <td>info.china@ugg.cn</td>
+                        </tr>
+                        <tr>
+                            <td>TEVA (INCLUDING AHNU BY TEVA)</td>
+                            <td>U.S.</td>
+                            <td>Customerservice@teva.com</td>
+                        </tr>
+                        <tr>
+                            <td>TEVA (INCLUDING AHNU BY TEVA)</td>
+                            <td>E.U.</td>
+                            <td>Customerservice@teva-eu.com</td>
+                        </tr>
+                        <tr>
+                            <td>TEVA (INCLUDING AHNU BY TEVA)</td>
+                            <td>U.K.</td>
+                            <td>customerservices@teva.co.uk</td>
+                        </tr>
+                        <tr>
+                            <td>TEVA (INCLUDING AHNU BY TEVA)</td>
+                            <td>Netherlands</td>
+                            <td>customerservices@teva-nl.com</td>
+                        </tr>
+                        <tr>
+                            <td>TEVA (INCLUDING AHNU BY TEVA)</td>
+                            <td>France</td>
+                            <td>serviceclients@teva-eu.com</td>
+                        </tr>
+                        <tr>
+                            <td>TEVA (INCLUDING AHNU BY TEVA)</td>
+                            <td>japan</td>
+                            <td>customer_service_jp@deckers.com</td>
+                        </tr>
+                        <tr>
+                            <td>TEVA (INCLUDING AHNU BY TEVA)</td>
+                            <td>china</td>
+                            <td>teva.china@deckers.com</td>
+                        </tr>
+                        <tr>
+                            <td>Sanuk</td>
+                            <td>U.S.</td>
+                            <td>Customerservicesanuk2@deckers.com</td>
+                        </tr>
+                        <tr>
+                            <td>Sanuk</td>
+                            <td>japan</td>
+                            <td>customer_service_jp@deckers.com</td>
+                        </tr>
+                        <tr>
+                            <td>HOKA ONE ONE</td>
+                            <td>U.S.</td>
+                            <td>customerservicehokaus@deckers.com</td>
+                        </tr>
+                        <tr>
+                            <td>HOKA ONE ONE</td>
+                            <td>Germany</td>
+                            <td>kundendienst@hokaoneone.eu</td>
+                        </tr>
+                        <tr>
+                            <td>HOKA ONE ONE</td>
+                            <td>France</td>
+                            <td>serviceclients@hokaoneone.eu</td>
+                        </tr>
+                        <tr>
+                            <td>HOKA ONE ONE</td>
+                            <td>E.U.</td>
+                            <td>customerservices@hokaoneone.eu</td>
+                        </tr>
+                        <tr>
+                            <td>HOKA ONE ONE</td>
+                            <td>japan</td>
+                            <td>customer_service_jp@deckers.com</td>
+                        </tr>
+                        <tr>
+                            <td>HOKA ONE ONE</td>
+                            <td>china</td>
+                            <td>hoka.china@deckers.com</td>
+                        </tr>
+                        <tr>
+                            <td>HOKA ONE ONE</td>
+                            <td>U.S.</td>
+                            <td>support@deckersxlab.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>
+                As permitted by applicable law, we may retain changed or deleted information for archival purposes. For EU residents, also see the "Special Note for EU Users—Your Rights and 
+                Choices" Section below for additional information.      
+            </p>
+            <mark>
+                What choices do i have regarding use of my personal information?
+            </mark>
+            <p>
+                Above we described how to opt-out of targeted advertising. You also may choose to opt-out of certain emails and direct mail from us. To opt-out of such emails, you may update your 
+                preferences by logging into your account or by following the opt-out instructions contained in the e-mails. To opt-out of such postal mail, please contact Customer Service at the 
+                applicable email address listed above. You are able to opt out of receiving such marketing and recommendation emails and mail from us, however, you cannot opt out of receiving all 
+                emails and mail from us, such as emails about your account, your purchases, or any Services you have requested or received from us. For EU residents, also see the "Special Note for 
+                EU Users—Your Rights and Choices" Section below for additional information.
+            </p>
+            <mark>
+                Will you transfer my information outside of my home country?
+            </mark>
+            <p>
+                We will collect, use, and process certain information, including name, email address, mailing address, and credit card information) to provide our services to you. We may transfer this 
+                information outside to other countries in which Deckers has an office, including to the United States, which may not have an equivalent level of data protection as in your home 
+                country. However, please rest assured that we implement all the necessary and appropriate legal, organizational and technical measures to protect your personal information. Your 
+                data also may be subject to access by law enforcement and other government entities, including courts and tribunals in accordance with the laws applicable in those jurisdictions.
+            </p>
+            <mark>
+                Special note for eu users - your rights and choices
+            </mark>
+            <p>
+                The data controller for our EU websites is:
+            </p>
+            <ul>
+                <li>
+                    Security: to detect data security incidents;
+                </li>
+            </ul>
+            <p>
+                With respect to your personal information, you have the right to:
+            </p>
+            <ul>
+                <li>
+                    Request access to and be provided with information on the processing of your personal information;       
+                </li>
+                <li>
+                    Request corrections of your personal information if such personal information proves inaccurate or incomplete;
+                </li>
+                <li>
+                    Request your personal information to be deleted (i) if it is no longer necessary for the purposes described in this Privacy Policy, (ii) should you decide to withdraw your consent 
+                    where you gave it, (iii) should you object to its processing for direct marketing purposes, (iv) should you identify that it would have been unlawfully processed, (v) should we be 
+                    under a legal obligation to erase it to comply with EU law or the law of an EU country and always provided we are not under a legal obligation to keep it;
+                </li>
+                <li>
+                    Restrict the processing of your personal information (i) if you contest its accuracy; (ii) if the processing is unlawful and you oppose the erasure; (iii) if it is no longer needed for the 
+                    purposes set out in this Privacy Policy but you require it for the establishment, exercise or defense of a legal claim, (iv) if you object to profiling;
+                </li>
+                <li>
+                    Object to the processing of your personal information for direct marketing purposes or to any processing which we would have based on our legitimate interest (e.g. profiling);
+                </li>
+                <li>
+                    Receive personal information which you provided to us in a structured, commonly used and machine-readable format and to transmit it to another provider provided it is processed 
+                    based on your consent or our contract;
+                </li>
+                <li>
+                    Lodge a complaint with your relevant data protection authority.
+                </li>
+            </ul>
+            <p>
+                If you wish to exercise any of your above rights, please reach out to us by any of the ways mentioned in the "Contact Us Regarding Your Information" section. To manage your choices 
+                regarding information collected through cookies, you may also click here.  
+            </p>
+            <p>
+                You may also directly manage some of your personal information by clicking on "My Account" from any page where you can access, correct or update your choices and settings 
+                regarding some of your personal information if you have created an account with us. With respect to our marketing emails, you can always click on the "Unsubscribe" link at the bottom 
+                of any marketing email you receive from us or manage your marketing permissions within "Edit Account" on our websites to opt out of receiving email communications from us in the 
+                future.
+            </p>
+            <p>
+                Your web browser or mobile device may also provide additional tools to allow you to control when your device provides specific categories of information (for example geolocation 
+                data or cookies use). Be aware of these tools.
+            </p>
+            <mark>
+                How long does deckers retain my information?
+            </mark>
+            <p>
+                Your personal information will be deleted when it is no longer necessary for the purpose for which it was collected. Your information that we need to manage you as our customer will 
+                be kept for as long as you are our customer. When you wish to terminate your account, your data will be erased accordingly, unless otherwise required by applicable law. We may have 
+                to retain some transactional information for evidentiary purposes according to applicable law.
+            </p>
+            <p>
+                We will keep consumers information that we use for prospection purposes for no more than [3 years] starting from the date of the last contact originating from the prospect or the end 
+                of the business relationship.
+            </p>
+            <p>
+                We refrain from keeping data collected through cookies and other trackers for more than [13 months] without renewing our notice and or obtaining your consent as the case may be.
+            </p>
+            <p>
+                Some other data are only kept for the time necessary to provide you with the relevant features of our websites or apps. For example, your geolocation data will not be kept beyond the 
+                time strictly necessary to identify your closest store or that you were present at a specific location at a given time, the body measurements you provide will only be processed during 
+                the time necessary to answer your relevant search and provide you with a relevant product reference.
+            </p>
+            <mark>
+                How do i get in touch with deckers?
+            </mark>
+            <p>
+                If you have questions about the privacy aspects of our Services or would like to make a complaint, please contact the applicable Customer Service department via the email addresses 
+                listed above.
+            </p>
+            <mark>
+                Changes to this policy
+            </mark>
+            <p>
+                This Policy is current as of the Effective Date set forth above. We may change this Policy from time to time, so please be sure to check back periodically. We will post any changes to 
+                this Policy on our Site. If we make any changes to this Policy that materially affect our practices with regard to the personal information we have previously collected from you, we will 
+                endeavor to provide you with notice in advance of such change by highlighting the change on our Site or by contacting you at the email address on file.
+            </p>
+        </div>
+    </section>   
+    <footer>
+        <div class="confirmPopup">
+            <h3>SUCESS!<input type="button" value="close" class="btn_close material-icons"></h3>
+            <p>Thank you for signing up!</p>
+        </div>
+        <div>
+            <div>
+                <strong>About</strong>
+                <p>HOKA was born out of the unwavering belief that if you ignored the doubters, brushed off the critics, and poured your heart into a wild idea,</p>
+                <a href="about_Story.html">Read More</a>
+            </div>
+            <ul>
+                <li>
+                    <strong>Company</strong>
+                    <a href="about_Story.html">Our Story</a>
+                    <a href="about_Impact.html">Our Impact</a>
+                    <a href="stories_Blog.html">Blog</a>
+                    <a href="https://www.deckers.com/careers">Careers</a>
+                    <a href="footer_customCare_16_AffiliateProgram.html">Affiliate Program</a>
+                </li>
+                <li>
+                    <strong>Customer Care</strong>
+                    <a href="footer_customCare_01_helpCenter.html">Help Center</a>
+                    <a href="footer_customCare_17_Guarantee.html">Fly for 30 Guarantee</a>
+                    <a href="footer_customCare_18_returnCenter.html">Returns &amp; Exchanges</a>
+                    <a href="footer_customCare_20_orderStatus.html">Order Status</a>
+                    <a href="footer_customCare_21_warranty.html">Warranty</a>
+                    <a href="footer_customCare_22_Counterfeit.html">Counterfeit Websites &amp; Phishing</a>
+                    <a href="footer_customCare_23_giftCardbalance.html">Gift Card Balance</a>
+                </li>
+                <li>
+                    <strong>Resources</strong>
+                    <a href="footer_Resources_01_sizeGuide.html">Sizing Guide</a>
+                    <a href="footer_Resources_02_TrustitFits.html">True Fit</a>
+                    <a href="footer_Resources_03_cleaningHoka.html">Care &amp; Cleaning</a>
+                    <a href="footer_customCare_17_Guarantee.html">Free Shipping &amp; Free Returns</a>
+                </li>
+                <li>
+                    <strong>Shop</strong>
+                    <a href="shoeFinder.html">Shoe Finder</a>
+                    <a href="footer_Shop_01_giftCard.html">Gift Cards</a>
+                    <a href="footer_Shop_02_Sale.html">Sale</a>
+                    <a href="storeLocator.html">Find a Store</a>
+                    <a href="footer_Shop_03_proDeal.html">Pro Deal</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <label for="footerEmail">STAY CONNECTED</label>
+                <input type="email" id="footerEmail" placeholder="Email">
+                <input type="button" value="SUBMIT" data-popup="confirmPopup">
+                <!-- subscribe confirm popup sign -->
+            </div>
+            <ul>
+                <li><a href="footer_customCare_17_Guarantee.html">FLY FOR 30 GUARANTEE FREE SHIPPING, FREE RETURNS</a></li>
+                <li><a href="https://www.facebook.com/hoka/">facebook</a></li>
+                <li><a href="https://www.instagram.com/hoka/">instagram</a></li>
+                <li><a href="https://twitter.com/hoka/">twitter</a></li>
+                <li><a href="https://www.youtube.com/user/HOKAONEONE">youtube</a></li>
+                <li><a href="https://www.strava.com/clubs/hoka-76016">strava</a></li>
+                <li><a href="https://www.pinterest.co.kr/hokaofficial/">pinterest</a></li>
+                <li><a href="https://www.tiktok.com/@hoka">tiktok</a></li>
+                <li><a href="index.html">footerlogo</a></li>
+            </ul>
+        </div>
+        <ul>
+            <li><a href="footer_Policy_01_privacyPolicy.html">Privacy Policy</a></li>
+            <li><a href="footer_Policy_02_cookiesPolicy.html">Cookies Policy</a></li>
+            <li><a href="footer_Policy_03_termsConditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="footer_Policy_04_deckersStatement.html">Website Accessibility</a></li>
+            <li><a href="https://www.hoka.com/on/demandware.static/-/Sites-HOKA-US-Library/default/dwfbc053da/documents/Public-Statement-SB-657.pdf">CA Transparency Act</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
