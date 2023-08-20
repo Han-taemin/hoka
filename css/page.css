@@ -3925,6 +3925,9 @@
     section.detailContainer > div:first-of-type + div + div + div > b#track{
         background-image: url("../images/Track.png");
     }
+    section.detailContainer > div:first-of-type + div + div + div > b#allTerrain{
+        background-image: url("../images/allTerreain.png");
+    }
     section.detailContainer > div.detailBox{
         padding: 80px 40px; background-color: #0077b8; color: white; margin-bottom: 100px;
     }
