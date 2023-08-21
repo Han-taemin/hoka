@@ -7423,6 +7423,9 @@
         position: absolute; right: 0; top: 55px; border: none; padding: 2px 0 0 25px; background-color: transparent; cursor: pointer;
         font-size: 14px; text-align: right; background: url("../images/camera.svg") no-repeat left center; line-height: 20px; 
     }
+    section.detailContainer > div.detailBox + div + div > div{
+        max-width: 100% !important;
+    }
     section.detailContainer > div.detailBox + div + div > div > div:first-of-type > ul > li{
         cursor: pointer;
     }
