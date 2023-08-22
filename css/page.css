@@ -759,6 +759,12 @@
     section.detailContainer > div:first-of-type + div + div + div > b#allTerrain{
         background-image: url("../images/allTerreain.png");
     }
+    section.detailContainer > div:first-of-type + div + div + div > b#slipRes{
+        background-image: url("../images/SlipResistant.png");
+    }
+    section.detailContainer > div:first-of-type + div + div + div > b#waterRes{
+        background-image: url("../images/WaterResistant.png");
+    }
     section.detailContainer > div.detailBox{
         padding: 40px 15px; background-color: #0077b8; color: white; margin-bottom: 50px;
     }
@@ -3930,6 +3936,12 @@
     }
     section.detailContainer > div:first-of-type + div + div + div > b#allTerrain{
         background-image: url("../images/allTerreain.png");
+    }
+    section.detailContainer > div:first-of-type + div + div + div > b#slipRes{
+        background-image: url("../images/SlipResistant.png");
+    }
+    section.detailContainer > div:first-of-type + div + div + div > b#waterRes{
+        background-image: url("../images/WaterResistant.png");
     }
     section.detailContainer > div.detailBox{
         padding: 80px 40px; background-color: #0077b8; color: white; margin-bottom: 100px;
@@ -7307,6 +7319,12 @@
     }
     section.detailContainer > div:first-of-type + div + div + div > b#allTerrain{
         background-image: url("../images/allTerreain.png");
+    }
+    section.detailContainer > div:first-of-type + div + div + div > b#slipRes{
+        background-image: url("../images/SlipResistant.png");
+    }
+    section.detailContainer > div:first-of-type + div + div + div > b#waterRes{
+        background-image: url("../images/WaterResistant.png");
     }
     section.detailContainer > div.detailBox{
         padding: 80px 40px; background-color: #0077b8; color: white; margin-bottom: 100px;
