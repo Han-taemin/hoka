@@ -925,7 +925,7 @@
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li:nth-of-type(6) mark{
         color: #00a6ff;
     }
-    section.finderContainer div:last-of-type > div > div:first-of-type > ul li strong{
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul li > a + strong{
         font-size: 20px; display: block; text-align: center; font-weight: 700; color: #3c4048;
     }
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li b{
@@ -933,6 +933,12 @@
     }
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li span{
         font-size: 12px;
+    }
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul[class*='Slider'] > li{
+        position: relative;
+    }
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul[class*='Slider'] > li > strong{
+        position: absolute; font-size: 14px; font-weight: 400; top: 15px; left: 15px;
     }
     section.finderContainer div:last-of-type > div > div:last-of-type > div{
         position: absolute; top: 510px; display: flex; width: 100%; justify-content: space-between; left: 0;
@@ -4106,7 +4112,7 @@
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li:nth-of-type(6) mark{
         color: #00a6ff;
     }
-    section.finderContainer div:last-of-type > div > div:first-of-type > ul li strong{
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul li > a + strong{
         font-size: 30px; display: block; text-align: center; font-weight: 700; color: #3c4048;
     }
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li b{
@@ -4114,6 +4120,12 @@
     }
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li span{
         font-size: 12px;
+    }
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul[class*='Slider'] > li{
+        position: relative;
+    }
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul[class*='Slider'] > li > strong{
+        position: absolute; font-size: 14px; font-weight: 400; top: 15px; left: 15px;
     }
     section.finderContainer div:last-of-type > div > div:last-of-type > div{
         position: absolute; top: 660px; display: flex; width: 99%; justify-content: space-between; left: 0.5%;
@@ -7447,9 +7459,6 @@
         position: absolute; right: 0; top: 55px; border: none; padding: 2px 0 0 25px; background-color: transparent; cursor: pointer;
         font-size: 14px; text-align: right; background: url("../images/camera.svg") no-repeat left center; line-height: 20px; 
     }
-    section.detailContainer > div.detailBox + div + div > div{
-        max-width: 100% !important;
-    }
     section.detailContainer > div.detailBox + div + div > div > div:first-of-type > ul > li{
         cursor: pointer;
     }
@@ -7525,7 +7534,7 @@
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li:nth-of-type(6) mark{
         color: #00a6ff;
     }
-    section.finderContainer div:last-of-type > div > div:first-of-type > ul li strong{
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul li > a + strong{
         font-size: 30px; display: block; text-align: center; font-weight: 700; color: #3c4048;
     }
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li b{
@@ -7533,6 +7542,12 @@
     }
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li span{
         font-size: 12px;
+    }
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul[class*='Slider'] > li{
+        position: relative;
+    }
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul[class*='Slider'] > li > strong{
+        position: absolute; font-size: 14px; font-weight: 400; top: 20px; left: 25px;
     }
     section.finderContainer div:last-of-type > div > div:last-of-type > div{
         position: absolute; top: 660px; display: flex; width: 99%; justify-content: space-between; left: 0.5%;
