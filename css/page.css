@@ -925,7 +925,7 @@
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li:nth-of-type(6) mark{
         color: #00a6ff;
     }
-    section.finderContainer div:last-of-type > div > div:first-of-type > ul li > a + strong{
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul.typeSlider li > a + strong{
         font-size: 20px; display: block; text-align: center; font-weight: 700; color: #3c4048;
     }
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li b{
@@ -934,10 +934,13 @@
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li span{
         font-size: 12px;
     }
-    section.finderContainer div:last-of-type > div > div:first-of-type > ul[class*='Slider'] > li{
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul li del{
+        color: #9b9b9b; font-size: 12px; font-weight: 400;
+    }
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul:not(.typeSlider) > li{
         position: relative;
     }
-    section.finderContainer div:last-of-type > div > div:first-of-type > ul[class*='Slider'] > li > strong{
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul:not(.typeSlider) > li > strong{
         position: absolute; font-size: 14px; font-weight: 400; top: 15px; left: 15px;
     }
     section.finderContainer div:last-of-type > div > div:last-of-type > div{
@@ -4112,7 +4115,7 @@
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li:nth-of-type(6) mark{
         color: #00a6ff;
     }
-    section.finderContainer div:last-of-type > div > div:first-of-type > ul li > a + strong{
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul.typeSlider li > a + strong{
         font-size: 30px; display: block; text-align: center; font-weight: 700; color: #3c4048;
     }
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li b{
@@ -4121,10 +4124,13 @@
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li span{
         font-size: 12px;
     }
-    section.finderContainer div:last-of-type > div > div:first-of-type > ul[class*='Slider'] > li{
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul li del{
+        color: #9b9b9b; font-size: 12px; font-weight: 400;
+    }
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul:not(.typeSlider) > li{
         position: relative;
     }
-    section.finderContainer div:last-of-type > div > div:first-of-type > ul[class*='Slider'] > li > strong{
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul:not(.typeSlider) > li > strong{
         position: absolute; font-size: 14px; font-weight: 400; top: 15px; left: 15px;
     }
     section.finderContainer div:last-of-type > div > div:last-of-type > div{
@@ -7534,7 +7540,7 @@
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li:nth-of-type(6) mark{
         color: #00a6ff;
     }
-    section.finderContainer div:last-of-type > div > div:first-of-type > ul li > a + strong{
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul.typeSlider li > a + strong{
         font-size: 30px; display: block; text-align: center; font-weight: 700; color: #3c4048;
     }
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li b{
@@ -7543,10 +7549,13 @@
     section.finderContainer div:last-of-type > div > div:first-of-type > ul li span{
         font-size: 12px;
     }
-    section.finderContainer div:last-of-type > div > div:first-of-type > ul[class*='Slider'] > li{
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul li del{
+        color: #9b9b9b; font-size: 12px; font-weight: 400;
+    }
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul:not(.typeSlider) > li{
         position: relative;
     }
-    section.finderContainer div:last-of-type > div > div:first-of-type > ul[class*='Slider'] > li > strong{
+    section.finderContainer div:last-of-type > div > div:first-of-type > ul:not(.typeSlider) > li > strong{
         position: absolute; font-size: 14px; font-weight: 400; top: 20px; left: 25px;
     }
     section.finderContainer div:last-of-type > div > div:last-of-type > div{
