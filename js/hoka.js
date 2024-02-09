@@ -68,6 +68,7 @@ function panelControl(target){
 function justToggle(target){
     $(target).click(function(){
         $(this).toggleClass("active");
+        $(this).siblings().removeClass("active");
     });
 }
 function parentToggle(target){
