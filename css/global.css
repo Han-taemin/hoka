@@ -386,8 +386,8 @@ section.finderContainer div:last-of-type h3{
     footer > div:nth-of-type(2) > ul > li strong{
         display: block; background: url("../images/add_btn.svg") no-repeat right center;
     }
-    footer > div:nth-of-type(2) > div strong.active,
-    footer > div:nth-of-type(2) > ul > li strong.active{
+    footer > div:nth-of-type(2) > div.active strong,
+    footer > div:nth-of-type(2) > ul > li.active strong{
         background: url("../images/remove_btn.svg") no-repeat right center;
     }
     footer > div:nth-of-type(2) > div > p{
@@ -397,8 +397,7 @@ section.finderContainer div:last-of-type h3{
     footer > div:nth-of-type(2) > div > a{
         color: black; padding-bottom: 20px; display: none;
     }
-    footer > div:nth-of-type(2) > div strong.active + p,
-    footer > div:nth-of-type(2) > div strong.active + p + a{
+    footer > div:nth-of-type(2) > div.active strong ~ *{
         display: block;
     }
     footer > div:nth-of-type(2) > ul > li a{
@@ -410,7 +409,7 @@ section.finderContainer div:last-of-type h3{
     footer > div:nth-of-type(2) > ul > li a:not(:last-of-type){
         margin-bottom: 10px;
     }
-    footer > div:nth-of-type(2) > ul > li strong.active ~ a{
+    footer > div:nth-of-type(2) > ul > li.active strong ~ a{
         display: block;
     }
     footer > div:nth-of-type(3) a{
@@ -783,9 +782,6 @@ section.finderContainer div:last-of-type h3{
     footer > div:nth-of-type(2){
         margin-bottom: 30px;
     }
-    footer > div:nth-of-type(2):after{
-        content: ''; display: block; clear: both;
-    }
     footer > div:nth-of-type(2) a{
         font-size: 12px; display: block; line-height: 25px;
     }
@@ -797,8 +793,8 @@ section.finderContainer div:last-of-type h3{
     footer > div:nth-of-type(2) > ul > li strong{
         display: block; background: url("../images/add_btn.svg") no-repeat right center;
     }
-    footer > div:nth-of-type(2) > div strong.active,
-    footer > div:nth-of-type(2) > ul > li strong.active{
+    footer > div:nth-of-type(2) > div.active strong,
+    footer > div:nth-of-type(2) > ul > li.active strong{
         background: url("../images/remove_btn.svg") no-repeat right center;
     }
     footer > div:nth-of-type(2) > div > p{
@@ -807,8 +803,7 @@ section.finderContainer div:last-of-type h3{
     footer > div:nth-of-type(2) > div > a{
         color: black; padding-bottom: 20px; display: none;
     }
-    footer > div:nth-of-type(2) > div strong.active + p,
-    footer > div:nth-of-type(2) > div strong.active + p + a{
+    footer > div:nth-of-type(2) > div.active strong ~ *{
         display: block;
     }
     footer > div:nth-of-type(2) > ul > li a{
@@ -820,7 +815,7 @@ section.finderContainer div:last-of-type h3{
     footer > div:nth-of-type(2) > ul > li a:not(:last-of-type){
         margin-bottom: 10px;
     }
-    footer > div:nth-of-type(2) > ul > li strong.active ~ a{
+    footer > div:nth-of-type(2) > ul > li.active strong ~ a{
         display: block;
     }
     footer > div:nth-of-type(3) a{

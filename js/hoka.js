@@ -16,10 +16,10 @@ $(function(){
     panelControl(".detailContainer input[value='How to find my HOKA size']");
     panelControl("input[value='Add to Cart']");
     justToggle("button.mui");
-    justToggle(".detailContainer ol li span");
-    justToggle("footer > div:nth-of-type(2) > div strong");
-    justToggle("footer > div:nth-of-type(2) > ul > li strong");
     justToggle("section.storeContainer > div > div > ul > li")
+    parentToggle("footer > div:nth-of-type(2) > div strong");
+    parentToggle("footer > div:nth-of-type(2) > ul > li strong");
+    parentToggle(".detailContainer ol li span");
     parentToggle(".filterContainer > aside > input[type=button]");
     parentToggle(".detailContainer > div:first-of-type aside > h2");
     parentToggle("section[class*=920p] > aside > button");
@@ -74,6 +74,7 @@ function justToggle(target){
 function parentToggle(target){
     $(target).click(function(){
         $(this).parent().toggleClass("active");
+        $(this).parent().siblings().removeClass("active");
     });
 }
 function asideFold(target){

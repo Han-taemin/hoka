@@ -680,10 +680,10 @@
         display: block; font-size: 12px; line-height: 50px; position: relative; cursor: pointer; 
         background: url("../images/add_btn.svg") no-repeat right center;
     }
-    section.detailContainer > div:first-of-type aside > ol > li span.active{
+    section.detailContainer > div:first-of-type aside > ol > li.active span{
         background: url("../images/remove_btn.svg") no-repeat right center;
     }
-    section.detailContainer > div:first-of-type aside > ol > li span.active + ul{
+    section.detailContainer > div:first-of-type aside > ol > li.active span + ul{
         display: block;
     }
     section.detailContainer > div:first-of-type aside > ol > li ul{
@@ -3864,10 +3864,10 @@
         display: block; font-size: 12px; line-height: 50px; position: relative; cursor: pointer; 
         background: url("../images/add_btn.svg") no-repeat right center;
     }
-    section.detailContainer > div:first-of-type aside > ol > li span.active{
+    section.detailContainer > div:first-of-type aside > ol > li.active span{
         background: url("../images/remove_btn.svg") no-repeat right center;
     }
-    section.detailContainer > div:first-of-type aside > ol > li span.active + ul{
+    section.detailContainer > div:first-of-type aside > ol > li.active span + ul{
         display: block;
     }
     section.detailContainer > div:first-of-type aside > ol > li ul{
@@ -7235,10 +7235,10 @@
         display: block; font-size: 12px; line-height: 50px; position: relative; cursor: pointer; 
         background: url("../images/add_btn.svg") no-repeat right center;
     }
-    section.detailContainer > div:first-of-type aside > ol > li span.active{
+    section.detailContainer > div:first-of-type aside > ol > li.active span{
         background: url("../images/remove_btn.svg") no-repeat right center;
     }
-    section.detailContainer > div:first-of-type aside > ol > li span.active + ul{
+    section.detailContainer > div:first-of-type aside > ol > li.active span + ul{
         display: block;
     }
     section.detailContainer > div:first-of-type aside > ol > li ul{
