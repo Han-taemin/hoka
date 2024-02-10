@@ -8947,7 +8947,7 @@
         font-size: 16px; font-weight: 500; line-height: 28px; margin-bottom: 30px;
     }
     section.affiliateContainer > div:last-of-type > p{
-        line-height: 75px; font-size: 12px; font-weight: 400; color: #828282; border-width: 1px 0; border-color: #eaeaea; border-style: solid; margin-bottom: 50px;
+        line-height: 20px; font-size: 12px; font-weight: 400; color: #828282; border-width: 1px 0; border-color: #eaeaea; border-style: solid; margin-bottom: 50px; padding: 25px 0;
     }
     section.affiliateContainer > div:last-of-type > a{
         display: block; line-height: 45px; width: 49%; float: left; color: white; text-decoration: none; background-color: black; text-align: center; font-size: 12px; font-weight: 400;
