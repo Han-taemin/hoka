@@ -1205,7 +1205,7 @@ section.finderContainer div:last-of-type h3{
         display: block;
     }
     footer > div:nth-of-type(3) > div{
-        padding-right: 660px; box-sizing: border-box;
+        padding-right: 546px; box-sizing: border-box;
     }
     footer > div:nth-of-type(3) > div > label{
         font-size: 12px; font-weight: 500;
