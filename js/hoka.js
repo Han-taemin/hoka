@@ -50,6 +50,7 @@ function popupControl(target){
     $(target).click(function(){
         currentPopup = "." + $(this).attr("data-popup");
         $(currentPopup).addClass("active");
+        $(currentPopup).siblings().removeClass("active");
     });
     $(".btn_close").click(function(){
         $(currentPopup).removeClass("active");
@@ -60,6 +61,7 @@ function panelControl(target){
     $(target).click(function(){
         currentPanel = "." + $(this).attr("data-panel");
         $(currentPanel).addClass("active");
+        $(currentPanel).siblings().removeClass("active");
     });
     $(".btn_close").click(function(){
         $(currentPanel).removeClass("active");
