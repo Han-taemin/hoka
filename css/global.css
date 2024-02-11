@@ -1205,7 +1205,7 @@ section.finderContainer div:last-of-type h3{
         display: block;
     }
     footer > div:nth-of-type(3) > div{
-        width: 70%;
+        padding-right: 660px; box-sizing: border-box;
     }
     footer > div:nth-of-type(3) > div > label{
         font-size: 12px; font-weight: 500;
@@ -1220,10 +1220,10 @@ section.finderContainer div:last-of-type h3{
         text-decoration: underline; cursor: pointer;
     }
     footer > div:nth-of-type(3) > ul{
-        position: absolute; right: 0; top: 0; width: 32%; display: flex; justify-content: space-between;
+        position: absolute; right: 0; top: 0; display: flex; justify-content: space-between;
     }
     footer > div:nth-of-type(3) > ul > li:first-child{
-        width: 32%; font-size: 10px; background-image: url(../images/footerLogo.png); background-repeat: no-repeat; padding-left: 6.5%; box-sizing: border-box;
+        font-size: 10px; background-image: url(../images/footerLogo.png); background-repeat: no-repeat; padding-left: 40px; box-sizing: border-box; word-break: break-all;
     }
     footer > div:nth-of-type(3) > ul > li > a{
         display: block; width: 100%; background-size: contain;
@@ -1232,13 +1232,13 @@ section.finderContainer div:last-of-type h3{
         color: #cccccc;
     }
     footer > div:nth-of-type(3) > ul > li:not(:first-child){
-        text-indent: -9999px; line-height: 20px; margin-left: 2%;
+        text-indent: -9999px; line-height: 20px; margin-left: 10px;
     }
     footer > div:nth-of-type(3) > ul > li:not(:first-child,:last-child){
-        width: 3.5%;
+        width: 20px;
     }
     footer > div:nth-of-type(3) > ul > li:last-child{
-        width: 20%;
+        width: 136px;
     }
     footer > div:nth-of-type(3) > ul > li:nth-of-type(2) > a{background-image: url(../images/sns_01.png); background-repeat: no-repeat;}
     footer > div:nth-of-type(3) > ul > li:nth-of-type(3) > a{background-image: url(../images/sns_02.png); background-repeat: no-repeat;}
