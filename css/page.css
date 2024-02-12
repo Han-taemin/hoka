@@ -5363,7 +5363,7 @@
         text-indent: -9999px;
     }
     section.affiliateContainer > aside{
-        width: 15%; padding-right: 85%;
+        width: 15%; padding-right: 85%; padding-left: 24px; margin-bottom: 20px;
     }
     section.affiliateContainer > aside > a{
         font-size: 12px; font-weight: 400; line-height: 22px; color: black; text-decoration: none; background: url("../images/prev_btn.svg") no-repeat left center; padding-left: 20px;
@@ -5372,10 +5372,10 @@
         text-decoration: underline;
     }
     section.affiliateContainer > div:first-of-type{
-        width: 70%;
+        width: 60%; padding-left: 24px; box-sizing: border-box;
     }
     section.affiliateContainer > div:first-of-type > h3{
-        font-size: 16px; font-weight: 500; line-height: 28px; margin-bottom: 30px;
+        font-size: 14px; font-weight: 500; line-height: 28px; margin-bottom: 30px;
     }
     section.affiliateContainer > div:first-of-type mark{
         font-size: 14px; font-weight: 500; line-height: 28px; color: #f59247; background-color: transparent; font-style: normal; display: block; margin-bottom: 30px;
@@ -5387,22 +5387,22 @@
         font-size: 14px; font-weight: 400; line-height: 24px; color: #828282; padding-left: 15px;
     }
     section.affiliateContainer > div:last-of-type{
-        width: 25%;
+        width: 38%; box-sizing: border-box; padding-right: 24px;
     }
     section.affiliateContainer > div:last-of-type:after{
         content: ""; display: block; clear: both;
     }
     section.affiliateContainer > div:last-of-type > h3{
-        font-size: 16px; font-weight: 500; line-height: 28px; margin-bottom: 30px;
+        font-size: 14px; font-weight: 500; line-height: 28px; margin-bottom: 30px;
     }
     section.affiliateContainer > div:last-of-type > p{
-        line-height: 75px; font-size: 12px; font-weight: 400; color: #828282; border-width: 1px 0; border-color: #eaeaea; border-style: solid; margin-bottom: 50px;
+        line-height: 22px; font-size: 12px; font-weight: 400; color: #828282; border-width: 1px 0; border-color: #eaeaea; border-style: solid; margin-bottom: 30px;
     }
     section.affiliateContainer > div:last-of-type > a{
-        display: block; line-height: 45px; width: 49%; float: left; color: white; text-decoration: none; background-color: black; text-align: center; font-size: 12px; font-weight: 400;
+        display: block; line-height: 45px; color: white; text-decoration: none; background-color: black; text-align: center; font-size: 12px; font-weight: 400;
     }
-    section.affiliateContainer > div:last-of-type > a:last-of-type{
-        margin-left: 2%;
+    section.affiliateContainer > div:last-of-type > a:first-of-type{
+        margin-bottom: 20px;
     }
     section.checkout{
         padding-top: 110px; margin-bottom: 100px; display: flex; flex-direction: column-reverse;

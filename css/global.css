@@ -498,7 +498,6 @@ section.finderContainer div:last-of-type h3{
     section.ironmanContainer > *:not(.bg),
     ul.collaboContainer,
     section.helpContainer > *:not(:first-child),
-    section.affiliateContainer > *:not(:first-child),
     section.completeContainer,
     section.flyForContainer > *:not(:first-child),
     section.saleContainer > *:not(:first-child),
