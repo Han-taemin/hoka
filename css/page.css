@@ -3423,7 +3423,7 @@
     }
     section.filterContainer > div:first-of-type > div input{
         border-width: 0 0 1px 0; background-color: transparent; display: block; line-height: 48px;
-        width: 19.5%; text-align: center; font-size: 12px; padding: 0; box-sizing: border-box;
+        text-align: center; font-size: 12px; padding: 0; box-sizing: border-box; width: 200px;
     }
     section.filterContainer > div:first-of-type ul{
         width: 100%; list-style: none;
@@ -6825,7 +6825,7 @@
     }
     section.filterContainer > div:first-of-type > div input{
         border-width: 0 0 1px 0; background-color: transparent; display: block; line-height: 48px;
-        width: 19.5%; text-align: center; font-size: 12px; cursor: pointer; padding: 0; box-sizing: border-box;
+        width: 230px; text-align: center; font-size: 12px; cursor: pointer; padding: 0; box-sizing: border-box;
     }
     section.filterContainer > div:first-of-type > div input:hover{
         border-width: 0; line-height: 49px;
