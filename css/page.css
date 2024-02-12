@@ -4491,7 +4491,7 @@
         display: block; font-size: 14px; font-weight: 600; margin-bottom: 30px; 
     }
     section.FilmContainer > div:last-of-type{
-        position: relative; width: 100%; padding-bottom: calc(56% + 100px);  height: 0; margin-bottom: 70px;
+        position: relative; width: 100%; padding-bottom: calc(56% + 100px);  height: 0; margin-bottom: 70px; box-sizing: border-box;
     }
     section.FilmContainer > div:last-of-type > iframe{
         position: absolute; top: 0; left: 0; width: 100%; height: calc(100% - 100px);
