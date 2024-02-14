@@ -2104,7 +2104,7 @@
         text-decoration: underline;
     }
     section.affiliateContainer > div:first-of-type{
-        width: 100%; padding: 0 15px; box-sizing: border-box;
+        width: 100%; padding: 0 15px; box-sizing: border-box; margin-bottom: 50px;
     }
     section.affiliateContainer > div:first-of-type > h3{
         font-size: 14px; font-weight: 500; line-height: 28px; margin-bottom: 30px;
