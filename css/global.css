@@ -93,7 +93,7 @@ section.finderContainer div:last-of-type h3{
     section.flyForContainer > *:not(:first-child),
     section.saleContainer >  *:not(:first-child),
     section.policyContainer{
-        max-width: 250px; margin: 0 auto;
+        margin: 0 auto; padding: 0 15px;
     }
     section[class*="920p"] > div{
         padding: 0 15px; margin: 0 auto; box-sizing: border-box;
