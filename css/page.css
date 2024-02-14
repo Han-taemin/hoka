@@ -425,7 +425,7 @@
     }
     div.rundownPanel{
         position: absolute; right: 4px; width: calc(100% - 8px); height: calc(100% - 8px); box-shadow: 1px 1px 5px #acacac; 
-        background-color: white; z-index: 100; overflow: scroll; 
+        background-color: white; z-index: 100;
     }
     div.rundownPanel > img:first-of-type{
         width: 100%; display: block; margin-bottom: 35px;
