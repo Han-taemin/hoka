@@ -1,6 +1,7 @@
 $(function(){
     $("#videoBox").fitVids();
     justBack();
+    muiClose();
     slider(".way3Carousel",3,590,35,false,true);
     slider(".humanFlySlider",6,290,20,false,false);
     slider("section.finderContainer ul",3,400,100,false,false);
@@ -28,6 +29,7 @@ $(function(){
     imgHover(".detailContainer > .detailBox + div > ul > li > a > img");
     imgHover(".saleContainer > ul > li > a > img")
     photoPopup("[class*=addPhoto] input[type='button']");
+    positionOffset(".detailContainer > div:nth-of-type(2)","div.rundownPanel");
     $(window).resize(autoHeight);
 });
 function justBack(){
@@ -120,4 +122,17 @@ function autoHeight(){
     applyVal = $(".detailContainer > div > ul li img").height();
     target = $(".detailContainer > div > ul li video");
     $(target).css("height",applyVal);
+}
+function muiClose(){
+    var mui = $("button.mui");
+    $("header div input").click(function(){
+        mui.removeClass("active");
+    });
+}
+function positionOffset(position,target){
+    var positionY,height,sum;
+    positionY = $(position).offset().top;
+    height = $(target).height();
+    sum = positionY - height/2;
+    $(target).css("top",sum);
 }

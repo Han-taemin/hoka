@@ -7016,7 +7016,7 @@
         width: 57%; padding-left: 43%; max-width: 320px; padding-bottom: 50px;
     }
     div.rundownPanel{
-        position: fixed; right: 10px; top: 10px; width: 26%; box-shadow: 1px 1px 5px #acacac; 
+        position: absolute; right: 10px; width: 26%; box-shadow: 1px 1px 5px #acacac; 
         background-color: white; z-index: 100;
     }
     div.rundownPanel > img:first-of-type{
@@ -7284,7 +7284,7 @@
     }
     section.detailContainer > div:first-of-type aside.fold{
         display: flex; position: fixed; bottom: 10px; right: 10px; padding: 10px 30px; width: 65%; align-items: center; background-color: white; border: 1px solid #eaeaea;
-        z-index: 10;
+        z-index: 1000;
     }
     section.detailContainer > div:first-of-type aside.fold input[value="Add to Cart"] ~ *,
     section.detailContainer > div:first-of-type aside.fold > mark{
