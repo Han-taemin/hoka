@@ -415,7 +415,7 @@
         font-size: 14px; font-weight: 500; display: block; margin-bottom: 20px;
     }
     div.sizeChartPanel > div ol{
-        width: 65%; padding-left: 3.5%;
+        width: 65%; padding-left: 3.5%; list-style: none;
     }
     div.sizeChartPanel > div ol li{
         margin-bottom: 25px;
@@ -3623,7 +3623,7 @@
         font-size: 14px; font-weight: 500; display: block; margin-bottom: 20px;
     }
     div.sizeChartPanel > div ol{
-        width: 65%; padding-left: 3.5%;
+        width: 65%; padding-left: 3.5%; list-style: none;
     }
     div.sizeChartPanel > div ol li{
         margin-bottom: 25px;
@@ -7007,7 +7007,7 @@
         font-size: 14px; font-weight: 500; display: block; margin-bottom: 20px;
     }
     div.sizeChartPanel > div ol{
-        width: 65%; padding-left: 3.5%;
+        width: 65%; padding-left: 3.5%; list-style: none;
     }
     div.sizeChartPanel > div ol li{
         margin-bottom: 25px;
