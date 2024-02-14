@@ -4,7 +4,7 @@ $(function(){
     slider(".way3Carousel",3,590,35,false,true);
     slider(".humanFlySlider",6,290,20,false,false);
     slider("section.finderContainer ul",3,400,100,false,false);
-    slider(".techSlider",1,1840,0,true,false);
+    slider(".techSlider",1,1840,0,false,false);
     popupControl(".detailContainer .humanFlySlider li");
     popupControl(".detailContainer .bx-wrapper + input");
     popupControl("footer div input[value='SUBMIT']");

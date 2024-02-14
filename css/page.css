@@ -235,17 +235,11 @@
     section.filterContainer > div:first-of-type ul{
         width: 100%; list-style: none;
     }
-    section.filterContainer > div:first-of-type ul:after{
-        content: ''; display: block; clear: both;
-    }
-    section.filterContainer > div:first-of-type ul:not(#default){
-        display: none;
-    }
     section.filterContainer > div:first-of-type ul li{
-        float: left; width: 48.5%; margin-bottom: 45px; position: relative;
+        margin-bottom: 45px; width: calc(50% - 10px);
     }
     section.filterContainer > div:first-of-type ul li:nth-of-type(2n){
-        margin-left: 3%;
+        margin-left: 10px;
     }
     section.filterContainer > div:first-of-type ul li a{
         display: block; margin-bottom: 20px;
@@ -257,7 +251,7 @@
         position: absolute; right: 0; top: 160px;
     }
     section.filterContainer aside > input[type="button"]{
-        display: block; font-size: 12px; line-height: 14px; padding-left: 20px; padding-right: 0; background: url("../images/filter.svg") no-repeat left center; border: none; background-color: transparent;
+        display: block; font-size: 12px; line-height: 14px; padding-left: 20px; padding-right: 15px; background: url("../images/filter.svg") no-repeat left center; border: none; background-color: transparent;
     }
     section.filterContainer aside.active > input[type="button"]{
         line-height: 24px; padding-left: 24px; padding-right: 0; background: url("../images/close.svg") no-repeat left center; border: none; background-color: transparent; text-indent: -9999px; position: absolute; top: 15px; left: 15px;
@@ -832,7 +826,7 @@
         display: block; width: 33.33%; float: left; font-size: 14px; font-weight: 500;
     }
     section.detailContainer > div.detailBox + div{
-        margin-bottom: 60px; width: 100% !important; padding: 0 !important;
+        margin-bottom: 60px; width: 100% !important; padding: 0 15px !important; box-sizing: border-box;
     }
     section.detailContainer > div.detailBox + div > span{
         font-size: 18px; margin-bottom: 20px; display: block;
@@ -868,7 +862,7 @@
         font-size: 14px; color: #9a9a9a; margin-bottom: 35px; line-height: 20px;
     }
     section.detailContainer > div.detailBox + div + div input[type='button']{
-        position: absolute; right: 0; top: 50px; border: none; padding: 2px 0 0 25px; background-color: transparent; cursor: pointer;
+        position: absolute; right: 15px; top: 50px; border: none; padding: 2px 0 0 25px; background-color: transparent; cursor: pointer;
         font-size: 14px; text-align: right; background: url("../images/camera.svg") no-repeat left center; line-height: 20px; 
     }
     section.detailContainer > div.detailBox + div + div > div > div:first-of-type > ul > li{
@@ -965,14 +959,6 @@
     section.resetContainer,
     section.resetDoneContainer{
         margin-bottom: 60px; padding-top: 115px;
-    }
-    section.joinContainer:after,
-    section.loginContainer:after,
-    section.lostContainer:after,
-    section.accountContainer:after,
-    section.resetContainer:after,
-    section.resetDoneContainer:after{
-        content: ""; display: block; clear: both;
     }
     section.joinContainer > aside,
     section.loginContainer > aside,
@@ -1270,7 +1256,7 @@
         display: block; font-size: 14px; font-weight: 600; margin-bottom: 30px; 
     }
     section.FilmContainer > div:last-of-type{
-        position: relative; width: 100%; padding-bottom: calc(56% + 100px);  height: 0; margin-bottom: 70px;
+        position: relative; width: 100%; padding-bottom: calc(56% + 100px);  height: 0; margin-bottom: 70px; box-sizing: border-box;
     }
     section.FilmContainer > div:last-of-type > iframe{
         position: absolute; top: 0; left: 0; width: 100%; height: calc(100% - 100px);
@@ -1321,7 +1307,7 @@
     }
     section.UtmbContainer > div:nth-of-type(2) > div > h3,
     section.UtmbContainer > div:nth-of-type(3) > div > h3{
-        font-size: 16px; font-weight: 600; color: #0085cc; margin-bottom: 30px;
+        font-size: 16px; font-weight: 600; color: #0085cc; margin-bottom: 30px; line-height: 20px;
     }
     section.UtmbContainer > div:nth-of-type(2) > div > h3:after,
     section.UtmbContainer > div:nth-of-type(3) > div > h3:after{
@@ -2100,6 +2086,55 @@
     }
     section.csDetailContainer > div > *:last-child{
         margin-bottom: 0;
+    }
+    section.affiliateContainer{
+        display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 130px;
+    }
+    section.affiliateContainer > h2{
+        width: 100%; padding-bottom: calc(240 / 1920 * 100%); height: 0; background: url("../images/helpCenter_banner.png") no-repeat left center; background-size: contain; margin-bottom: 80px;
+        text-indent: -9999px;
+    }
+    section.affiliateContainer > aside{
+        width: 15%; padding-right: 85%; padding-left: 24px; margin-bottom: 20px;
+    }
+    section.affiliateContainer > aside > a{
+        font-size: 12px; font-weight: 400; line-height: 22px; color: black; text-decoration: none; background: url("../images/prev_btn.svg") no-repeat left center; padding-left: 20px;
+    }
+    section.affiliateContainer > aside > a:hover{
+        text-decoration: underline;
+    }
+    section.affiliateContainer > div:first-of-type{
+        width: 60%; padding-left: 24px; box-sizing: border-box;
+    }
+    section.affiliateContainer > div:first-of-type > h3{
+        font-size: 14px; font-weight: 500; line-height: 28px; margin-bottom: 30px;
+    }
+    section.affiliateContainer > div:first-of-type mark{
+        font-size: 14px; font-weight: 500; line-height: 28px; color: #f59247; background-color: transparent; font-style: normal; display: block; margin-bottom: 30px;
+    }
+    section.affiliateContainer > div:first-of-type > p{
+        font-size: 14px; font-weight: 400; line-height: 24px; color: #828282; margin-bottom: 30px;
+    }
+    section.affiliateContainer > div:first-of-type > ul{
+        font-size: 14px; font-weight: 400; line-height: 24px; color: #828282; padding-left: 15px;
+    }
+    section.affiliateContainer > div:last-of-type{
+        width: 38%; box-sizing: border-box; padding-right: 24px;
+    }
+    section.affiliateContainer > div:last-of-type:after{
+        content: ""; display: block; clear: both;
+    }
+    section.affiliateContainer > div:last-of-type > h3{
+        font-size: 14px; font-weight: 500; line-height: 28px; margin-bottom: 30px;
+    }
+    section.affiliateContainer > div:last-of-type > p{
+        line-height: 22px; font-size: 12px; font-weight: 400; color: #828282; border-width: 1px 0; border-color: #eaeaea; border-style: solid; margin-bottom: 30px;
+    }
+    section.affiliateContainer > div:last-of-type > a{
+        display: block; line-height: 45px; color: white; text-decoration: none; background-color: black; text-align: center; font-size: 12px; font-weight: 400;
+    }
+    section.affiliateContainer > div:last-of-type > a:first-of-type{
+        margin-bottom: 20px;
     }
     section.checkout{
         padding-top: 110px; margin-bottom: 100px; display: flex; flex-direction: column-reverse;
