@@ -424,7 +424,7 @@
         width: 57%; padding-left: 43%; max-width: 320px; padding-bottom: 50px;
     }
     div.rundownPanel{
-        position: fixed; right: 4px; top: 4px; width: calc(100% - 8px); height: calc(100% - 8px); box-shadow: 1px 1px 5px #acacac; 
+        position: absolute; right: 4px; width: calc(100% - 8px); height: calc(100% - 8px); box-shadow: 1px 1px 5px #acacac; 
         background-color: white; z-index: 100; overflow: scroll; 
     }
     div.rundownPanel > img:first-of-type{
@@ -3632,7 +3632,7 @@
         width: 57%; padding-left: 43%; max-width: 320px; padding-bottom: 50px;
     }
     div.rundownPanel{
-        position: fixed; right: 6px; top: 70px; width: 50%; background-color: white; z-index: 100;
+        position: absolute; right: 6px; width: 50%; background-color: white; z-index: 100;
     }
     div.rundownPanel > img:first-of-type{
         width: 100%; display: block; margin-bottom: 35px;
@@ -7310,7 +7310,7 @@
         font-size: 14px; font-weight: 500; margin-bottom: 30px;
     }
     section.detailContainer > div:first-of-type + div > p{
-        font-size: 20px; font-weight: 300; width: 37.5%; margin-bottom: 20px;
+        font-size: 20px; font-weight: 300; width: 37.5%; margin-bottom: 20px; line-height: 30px;
     }
     section.detailContainer > div:first-of-type + div > input[type='button']{
         display: block; background-color: transparent; border: 1px solid #eaeaea; line-height: 45px; width: 140px; font-size: 12px; cursor: pointer;
