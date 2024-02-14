@@ -235,8 +235,11 @@
     section.filterContainer > div:first-of-type ul{
         width: 100%; list-style: none;
     }
+    section.filterContainer > div:first-of-type ul:after{
+        content: ""; display: block; clear: both;
+    }
     section.filterContainer > div:first-of-type ul li{
-        margin-bottom: 45px; width: calc(50% - 10px);
+        margin-bottom: 45px; width: calc(50% - 10px); float: left;
     }
     section.filterContainer > div:first-of-type ul li:nth-of-type(2n){
         margin-left: 10px;
