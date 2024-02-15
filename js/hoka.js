@@ -29,8 +29,8 @@ $(function(){
     imgHover(".detailContainer > .detailBox + div > ul > li > a > img");
     imgHover(".saleContainer > ul > li > a > img")
     photoPopup("[class*=addPhoto] input[type='button']");
-    $(document).ready(positionOffset(".detailContainer > div:nth-of-type(2)","div.rundownPanel"));
-    $(document).ready(positionOffset(".detailContainer > .detailBox + div + div","[class^=humanFlyPopup]"));
+    positionOffset(".detailContainer > div:nth-of-type(2)","div.rundownPanel");
+    positionOffset(".detailContainer > .detailBox + div + div","[class^=humanFlyPopup]");
     $(window).resize(autoHeight);
 });
 function justBack(){
