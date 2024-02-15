@@ -132,5 +132,6 @@ function muiClose(){
 }
 function positionOffset(position,target){
     var positionY = $(position).offset().top;
+    console.log(positionY);
     $(target).css("top",positionY);
 }
