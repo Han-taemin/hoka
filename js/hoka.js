@@ -131,7 +131,7 @@ function muiClose(){
     });
 }
 function positionOffset(position,target){
-    if(position.length){
+    if(position.length > 0){
         var positionY = $(position).offset().top;
         $(target).css("top",positionY);
     }
