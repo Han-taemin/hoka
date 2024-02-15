@@ -31,6 +31,7 @@ $(function(){
     photoPopup("[class*=addPhoto] input[type='button']");
     positionOffset(".detailContainer > div:nth-of-type(2)","div.rundownPanel");
     positionOffset(".detailContainer > .detailBox + div + div","[class^=humanFlyPopup]");
+    positionOffset("footer","footer > div:first-of-type");
     $(window).resize(autoHeight);
 });
 function justBack(){
@@ -132,7 +133,10 @@ function muiClose(){
 }
 function positionOffset(position,target){
     if(position.length > 0){
-        var positionY = $(position).offset().top;
-        $(target).css("top",positionY);
+        var positionY, value, sumVal;
+        positionY = $(position).offset().top;
+        value = target.height();
+        sumVal = positionY - value / 2;    
+        $(target).css("top",sumVal);
     }
 }
