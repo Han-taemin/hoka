@@ -126,8 +126,8 @@ function photoPopup(target){
     stepper(target);
     $(".btn_close").click(function(){
         $("[class=addPhoto01").addClass("active");
-        $("addPhotoPanel > .stepper > li").removeClass("active");
-        $("addPhotoPanel > .stepper > li:first-child").addClass("active");
+        $(".addPhotoPanel > .stepper > li").removeClass("active");
+        $(".addPhotoPanel > .stepper > li:first-child").addClass("active");
     });
 };
 function autoHeight(){
