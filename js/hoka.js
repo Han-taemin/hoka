@@ -31,6 +31,7 @@ $(function(){
     photoPopup("[class*=addPhoto] input[type='button']");
     positionOffset(".detailContainer > div:nth-of-type(2)","div.rundownPanel");
     positionOffset(".detailContainer > .detailBox + div + div","[class^=humanFlyPopup]");
+    positionOffset(".detailContainer > .detailBox + div + div","[class^=addPhotoPanel]");
     $(window).resize(autoHeight);
 });
 function justBack(){
