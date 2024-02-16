@@ -6968,7 +6968,7 @@
     }
     div.sizeChartPanel{
         position: absolute; right: 10px; top: 10px; width: 33%; background-color: white; z-index: 100;  
-        box-shadow: 1px 1px 5px #acacac;     
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;     
     }
     div.sizeChartPanel h2,
     div.rundownPanel h2,
@@ -7016,8 +7016,7 @@
         width: 57%; padding-left: 43%; max-width: 320px; padding-bottom: 50px;
     }
     div.rundownPanel{
-        position: absolute; right: 10px; width: 26%; box-shadow: 1px 1px 5px #acacac; 
-        background-color: white; z-index: 100;
+        position: absolute; right: 10px; width: 26%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; background-color: white; z-index: 100;
     }
     div.rundownPanel > img:first-of-type{
         width: 100%; display: block; margin-bottom: 35px;
@@ -7035,7 +7034,7 @@
         padding-bottom: 35px;
     }
     div.addPhotoPanel{
-        position: absolute; width: 26%; background-color: white; z-index: 100; max-width: 480px; left: 37%;
+        position: absolute; width: 26%; background-color: white; z-index: 100; max-width: 480px; left: 37%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     div.addPhotoPanel ol{
         list-style: none; padding: 25px 9%; display: flex; border-bottom: 1px; border-color: #eaeaea; border-style: solid;
@@ -7144,7 +7143,7 @@
         margin-bottom: 55px;
     }
     div[class*='humanFlyPopup']{
-        width: 46%; box-shadow: 1px 1px 5px #acacac; position: absolute; left: 25%; background-color: white; z-index: 100;
+        width: 46%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; position: absolute; left: 25%; background-color: white; z-index: 100;
         padding: 0 2% 30px;
     }
     div[class*='humanFlyPopup']:after{
@@ -7456,7 +7455,7 @@
         display: block; width: 33.33%; float: left; font-size: 14px; font-weight: 500;
     }
     section.detailContainer > div.detailBox + div{
-        margin-bottom: 110px; width: 100% !important; padding: 0 40px !important;
+        margin-bottom: 110px; width: 100% !important; padding: 0 40px !important; box-sizing: border-box;
     }
     section.detailContainer > div.detailBox + div > span{
         font-size: 28px; margin-bottom: 40px; display: block;
@@ -7811,7 +7810,7 @@
         text-decoration: underline;
     }
     div.addressPopup{
-        position: absolute; left: 25%; top: 50px; width: 50%; background-color: white; box-shadow: 1px 1px 5px grey; z-index: 10;
+        position: absolute; left: 25%; top: 50px; width: 50%; background-color: white; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; z-index: 10;
     }
     div.addressPopup > form > fieldset > legend{
         line-height: 60px; font-size: 14px; font-weight: 400; display: block; width: 100%; text-align: center; border-bottom: 1px solid #eaeaea;
@@ -9553,7 +9552,7 @@
         line-height: 45px; width: 19.5%; text-align: center; color: white; border: none; background-color: black;
     }
     .noNumberPopup{
-        position: absolute; top: 130px; left: 25.5%; width: 49%; background-color: white; box-shadow: 1px 1px 5px #828282; z-index: 10;
+        position: absolute; top: 130px; left: 25.5%; width: 49%; background-color: white; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; z-index: 10;
     }
     .noNumberPopup > form > legend{
         font-size: 14px; display: block; text-align: center; line-height: 60px; border-bottom: 1px solid #eaeaea;
@@ -9759,7 +9758,7 @@
         line-height: 45px; font-size: 12px; font-weight: 400; background-color: black; text-align: center; color: white; text-decoration: none; display: block; width: 50%; transform: translateX(100%);
     }
     div.balancePopup{
-        position: absolute; top: 200px; left: 25.5%; width: 49%; background-color: white; box-shadow: 1px 1px 5px gray; padding-bottom: 60px; z-index: 10;
+        position: absolute; top: 200px; left: 25.5%; width: 49%; background-color: white; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; padding-bottom: 60px; z-index: 10;
     }
     div.balancePopup > h2{
         position: relative; line-height: 60px; border-bottom: 1px solid #eaeaea; font-size: 14px; font-weight: 400; text-align: center; margin-bottom: 60px;
