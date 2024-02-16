@@ -7035,7 +7035,7 @@
         padding-bottom: 35px;
     }
     div.addPhotoPanel{
-        position: fixed; width: 26%; background-color: white; z-index: 100; max-width: 480px; left: 37%;
+        position: absolute; width: 26%; background-color: white; z-index: 100; max-width: 480px; left: 37%;
     }
     div.addPhotoPanel ol{
         list-style: none; padding: 25px 9%; display: flex; border-bottom: 1px; border-color: #eaeaea; border-style: solid;
