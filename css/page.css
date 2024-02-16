@@ -7065,7 +7065,7 @@
         display: none;  background-color: white;
     }
     div.addPhotoPanel div.active{
-        display: block; position: absolute; left: 0; top: 125px; width: 100%;
+        display: block; width: 100%;
     }
     div.addPhotoPanel div.addPhoto01{
         padding: 120px 16.5%; box-sizing: border-box;

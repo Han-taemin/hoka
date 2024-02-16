@@ -108,6 +108,11 @@ function stepper(target){
             var result = currentStep;
             currentStep++;
             $(this).parent().siblings(".stepper").children('li').eq(result).addClass("active");
+            $(".btn_close").click(function(){
+                currentStep = 1;
+            });
+        }if(currentStep > totalSteps){
+            currentStep = 1;
         }
     });
 };
@@ -115,9 +120,15 @@ function photoPopup(target){
     var currentPopup = null;
     $(target).click(function(){
         currentPopup = "." + $(this).attr("data-popup");
+        $(target).parent().siblings().removeClass("active");
         $(currentPopup).addClass("active");
     });
     stepper(target);
+    $(".btn_close").click(function(){
+        $("[class=addPhoto01").addClass("active");
+        $("addPhotoPanel > .stepper > li").removeClass("active");
+        $("addPhotoPanel > .stepper > li:first-child").addClass("active");
+    });
 };
 function autoHeight(){
     var applyVal, target;
