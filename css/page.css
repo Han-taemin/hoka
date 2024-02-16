@@ -7383,13 +7383,16 @@
         content: ''; display: block; clear: both;
     }
     section.detailContainer > div.detailBox > h3{
-        font-size: 30px; font-weight: 500;  margin-bottom: 35px;
+        font-size: 30px; font-weight: 500;  margin-bottom: 35px; width: 100%;
+    }
+    section.detailContainer > div.detailBox > h3 ~ *{
+        float: left;
     }
     section.detailContainer > div.detailBox > h3 small{
         font-size: 14px; display: block; margin-bottom: 20px;
     }
     section.detailContainer > div.detailBox > ul{
-        list-style: none; width: 13%; float: left;
+        list-style: none; width: 18%; 
     }
     section.detailContainer > div.detailBox > ul li:after{
         content: ''; display: block; clear: both;
@@ -7398,19 +7401,17 @@
         margin-bottom: 35px;
     }
     section.detailContainer > div.detailBox > ul li h4{
-        font-size: 12px; font-weight: 400; float: left; width: 50%;
+        font-size: 12px; font-weight: 400; float: left; width: 120px;
     }
     section.detailContainer > div.detailBox > ul li span{
-        display: block; float: left; position: relative; width: 40%; margin-left: 10%;
+        display: flex; justify-content: space-between; width: 95px; float: right;
     }
-    section.detailContainer > div.detailBox > ul li span b{
+    section.detailContainer > div.detailBox > ul li span b,
+    section.detailContainer > div.detailBox > ul li span small{
         font-size: 22px; font-weight: 500;
     }
-    section.detailContainer > div.detailBox > ul li span small{
-        font-size: 12px; font-weight: 500; position: absolute; right: 0; top: 0;
-    }
     section.detailContainer > div.detailBox > div{
-        float: left; width: 60%; margin-left: 10%; padding-right: 17%;
+        width: 65%; margin-left: 7%; padding-right: 10%;
     }
     section.detailContainer > div.detailBox > div:after{
         content: ''; display: block; clear: both;
