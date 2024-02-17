@@ -59,7 +59,7 @@ function popupControl(target){
     $(".btn_close").click(function(){
         $(currentPopup).removeClass("active");
     });
-};
+}
 function panelControl(target){
     var currentPanel = null;
     $(target).click(function(){
@@ -70,7 +70,7 @@ function panelControl(target){
     $(".btn_close").click(function(){
         $(currentPanel).removeClass("active");
     });
-};
+}
 function justToggle(target){
     $(target).click(function(){
         $(this).toggleClass("active");
@@ -115,7 +115,7 @@ function stepper(target){
             currentStep = 1;
         }
     });
-};
+}
 function photoPopup(target){
     var currentPopup = null;
     $(target).click(function(){
@@ -129,7 +129,7 @@ function photoPopup(target){
         $(".addPhotoPanel > .stepper > li").removeClass("active");
         $(".addPhotoPanel > .stepper > li:first-child").addClass("active");
     });
-};
+}
 function autoHeight(){
     var applyVal, target;
     applyVal = $(".detailContainer > div > ul li img").height();
@@ -144,7 +144,7 @@ function muiClose(){
 }
 function positionOffset(position,target){
     var positionY = 0;
-    if(position.length > 0){
+    if($(position).length > 0){
         positionY = $(position).offset().top;
         $(target).css("top",positionY);
     };
