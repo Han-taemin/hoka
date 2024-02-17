@@ -146,6 +146,7 @@ function positionOffset(position,target){
     var positionY = 0;
     if($(position).length > 0){
         positionY = $(position).offset().top;
-        $(target).css("top",positionY);
+        console.log(positionY);
+        $(target).css("top",positionY);  
     };
 }
