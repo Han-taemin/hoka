@@ -143,8 +143,9 @@ function muiClose(){
     });
 }
 function positionOffset(position,target){
+    var positionY = 0;
     if(position.length > 0){
-        var positionY = $(position).offset().top;
-        $(target).css("top",positionY);
-    }
+        positionY = $(position).offset().top;
+        $(target).offset({top: positionY});
+    };
 }
