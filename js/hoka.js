@@ -30,8 +30,8 @@ $(function(){
     imgHover(".saleContainer > ul > li > a > img")
     photoPopup("[class*=addPhoto] input[type='button']");
     positionOffset(".detailContainer > div:nth-of-type(2)","div.rundownPanel");
-    positionOffset(".detailContainer > div:last-of-type input[value=Add Your Photo]","[class^=humanFlyPopup]");
-    positionOffset(".detailContainer > div:last-of-type input[value=Add Your Photo]","[class^=addPhotoPanel]");
+    positionOffset(".detailContainer > div:last-of-type input[value='Add Your Photo']","[class^=humanFlyPopup]");
+    positionOffset(".detailContainer > div:last-of-type input[value='Add Your Photo']","[class^=addPhotoPanel]");
     $(window).resize(autoHeight);
 });
 function justBack(){
