@@ -6,14 +6,14 @@ $(function(){
     slider(".humanFlySlider",6,290,20,false,false);
     slider("section.finderContainer ul",3,400,100,false,false);
     slider(".techSlider",1,1840,0,false,false);
-    popupControl(".detailContainer .humanFlySlider li");
-    popupControl(".detailContainer .bx-wrapper + input");
+    popupOffset(".detailContainer .humanFlySlider li",".detailContainer > div:last-of-type");
+    popupOffset(".detailContainer .bx-wrapper + input",".detailContainer > div:last-of-type");
+    panelOffset(".detailContainer input[value='View more']",".detailContainer > div:nth-of-type(2)");
     popupControl("footer div input[value='SUBMIT']");
     popupControl(".accountContainer input[value='Add address']");
     popupControl(".returnCenterContainer > div > form > div > input:first-of-type");
     popupControl(".balanceContainer > div:first-of-type > input:last-of-type");
     panelControl("header div input");
-    panelControl(".detailContainer input[value='View more']");
     panelControl(".detailContainer input[value='How to find my HOKA size']");
     panelControl("input[value='Add to Cart']");
     justToggle("button.mui");
@@ -29,9 +29,6 @@ $(function(){
     imgHover(".detailContainer > .detailBox + div > ul > li > a > img");
     imgHover(".saleContainer > ul > li > a > img")
     photoPopup("[class*=addPhoto] input[type='button']");
-    positionOffset(".detailContainer > div:nth-of-type(2)","div.rundownPanel");
-    positionOffset(".detailContainer > div:last-of-type input[value='Add Your Photo']","[class^=humanFlyPopup]");
-    positionOffset(".detailContainer > div:last-of-type input[value='Add Your Photo']","[class^=addPhotoPanel]");
     $(window).resize(autoHeight);
 });
 function justBack(){
@@ -110,6 +107,9 @@ function stepper(target){
             $(this).parent().siblings(".stepper").children('li').eq(result).addClass("active");
             $(".btn_close").click(function(){
                 currentStep = 1;
+                $("[class=addPhoto01").addClass("active");
+                $(".addPhotoPanel > .stepper > li").removeClass("active");
+                $(".addPhotoPanel > .stepper > li:first-child").addClass("active");
             });
         }if(currentStep > totalSteps){
             currentStep = 1;
@@ -124,11 +124,6 @@ function photoPopup(target){
         $(currentPopup).addClass("active");
     });
     stepper(target);
-    $(".btn_close").click(function(){
-        $("[class=addPhoto01").addClass("active");
-        $(".addPhotoPanel > .stepper > li").removeClass("active");
-        $(".addPhotoPanel > .stepper > li:first-child").addClass("active");
-    });
 }
 function autoHeight(){
     var applyVal, target;
@@ -142,11 +137,33 @@ function muiClose(){
         mui.removeClass("active");
     });
 }
-function positionOffset(position,target){
-    var positionY = 0;
-    if($(position).length > 0){
-        positionY = $(position).offset().top;
-        console.log(positionY);
-        $(target).css("top",positionY);  
-    };
+function popupOffset(target,positionT){
+    var currentPopup, yPos;
+    currentPopup = null;
+    yPos = 0;
+    $(target).click(function(){
+        currentPopup = "." + $(this).attr("data-popup");
+        $(currentPopup).addClass("active");
+        $(currentPopup).siblings().removeClass("active");
+        yPos = $(positionT).offset().top;
+        $(currentPopup).css("top",yPos);
+    });
+    $(".btn_close").click(function(){
+        $(currentPopup).removeClass("active");
+    });
+}
+function panelOffset(target,positionT){
+    var currentPanel, yPos;
+    currentPanel = null;
+    yPos = 0;
+    $(target).click(function(){
+        currentPanel = "." + $(this).attr("data-panel");
+        $(currentPanel).addClass("active");
+        $(currentPanel).siblings().removeClass("active");
+        yPos = $(positionT).offset().top;
+        $(currentPanel).css("top",yPos);
+    });
+    $(".btn_close").click(function(){
+        $(currentPanel).removeClass("active");
+    });
 }
