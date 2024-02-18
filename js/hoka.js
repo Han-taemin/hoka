@@ -29,6 +29,7 @@ $(function(){
     imgHover(".detailContainer > .detailBox + div > ul > li > a > img");
     imgHover(".saleContainer > ul > li > a > img")
     photoPopup("[class*=addPhoto] input[type='button']");
+    asideNone("button.mui");
     $(window).resize(autoHeight);
 });
 function justBack(){
@@ -165,5 +166,32 @@ function panelOffset(target,positionT){
     });
     $(".btn_close").click(function(){
         $(currentPanel).removeClass("active");
+    });
+}
+function asideNone(target){
+    var aside, screenWidth;
+    aside = $(".detailContainer aside");
+    screenWidth = $(window).width();
+    $(target).click(function(){
+        if($(this).hasClass("active")){
+            $(aside).css("display","none");
+        }else{
+            $(aside).css("display","block");
+        }
+    });
+    $(window).resize(function(){
+        screenWidth = $(window).width(); 
+        if(screenWidth < 1280){
+            $(window).scroll(function(){
+                var asideHide, scrollTop;
+                asideHide = $(".detailContainer").height() - $("footer").height();
+                scrollTop = $(window).scrollTop();
+                if(scrollTop >= asideHide){
+                    $(aside).css("display","none");
+                }else{
+                    $(aside).css("display","block");
+                }
+            });
+        }
     });
 }
