@@ -443,7 +443,7 @@
         padding-bottom: 35px;
     }
     div.addPhotoPanel{
-        position: absolute; width: calc(100% - 8px); height: calc(100% - 8px); background-color: white; z-index: 100; max-width: 480px; box-shadow: 1px 1px 5px #acacac; left: 4px;
+        position: absolute; width: calc(100% - 8px); height: calc(100% - 8px); background-color: white; z-index: 100; max-width: 480px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; left: 4px;
     }
     div.addPhotoPanel ol{
         list-style: none; padding: 25px 9%; display: flex; border-bottom: 1px; border-color: #eaeaea; border-style: solid; position: relative; z-index: 1;
@@ -552,7 +552,7 @@
         margin-bottom: 55px;
     }
     div[class*='humanFlyPopup']{
-        width: calc(100% - 8px); box-shadow: 1px 1px 5px #acacac; position: absolute; left: 4px; background-color: white; z-index: 100;
+        width: calc(100% - 8px); box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; position: absolute; left: 4px; background-color: white; z-index: 100;
         padding: 0 15px 30px; box-sizing: border-box; overflow: scroll;
     }
     div[class*='humanFlyPopup'] h2{
@@ -1113,7 +1113,7 @@
         text-decoration: underline;
     }
     div.addressPopup{
-        position: fixed; left: 4px; top: 4px; width: calc(100% - 8px); height: calc(100% - 8px); overflow: scroll; background-color: white; box-shadow: 1px 1px 5px grey; z-index: 10;
+        position: fixed; left: 4px; top: 4px; width: calc(100% - 8px); height: calc(100% - 8px); overflow: scroll; background-color: white; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; z-index: 10;
     }
     div.addressPopup > form > fieldset > legend{
         line-height: 60px; font-size: 14px; font-weight: 400; display: block; width: 100%; text-align: center; border-bottom: 1px solid #eaeaea;
@@ -2863,7 +2863,7 @@
         line-height: 45px; font-size: 12px; font-weight: 400; background-color: black; text-align: center; color: white; text-decoration: none; display: block; width: 100%; 
     }
     div.balancePopup{
-        position: fixed; top: 4px; left: 4px; width: calc(100% - 8px); height: calc(100% - 8px); background-color: white; box-shadow: 1px 1px 5px gray; z-index: 10; 
+        position: fixed; top: 4px; left: 4px; width: calc(100% - 8px); height: calc(100% - 8px); box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; box-shadow: 1px 1px 5px gray; z-index: 10; 
     }
     div.balancePopup > h2{
         position: relative; line-height: 60px; border-bottom: 1px solid #eaeaea; font-size: 14px; font-weight: 400; text-align: center; margin-bottom: 60px;
@@ -3650,7 +3650,7 @@
         padding-bottom: 35px;
     }
     div.addPhotoPanel{
-        position: absolute; width: 50%; background-color: white; z-index: 100; max-width: 480px; left: 25%;
+        position: absolute; width: 50%; background-color: white; z-index: 100; max-width: 480px; left: 25%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     div.addPhotoPanel ol{
         list-style: none; padding: 25px 9%; display: flex; border-bottom: 1px; border-color: #eaeaea; border-style: solid; position: relative; z-index: 1; background-color: white;
@@ -3759,7 +3759,7 @@
         margin-bottom: 55px;
     }
     div[class*='humanFlyPopup']{
-        width: calc(100% - 12px); box-shadow: 1px 1px 5px #acacac; position: absolute; left: 6px; background-color: white; z-index: 100;
+        width: calc(100% - 12px); box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; position: absolute; left: 6px; background-color: white; z-index: 100;
         padding: 0 20px 30px; box-sizing: border-box;
     }
     div[class*='humanFlyPopup']:after{
@@ -4369,7 +4369,7 @@
         text-decoration: underline;
     }
     div.addressPopup{
-        position: fixed; left: 6px; top: 70px; width: calc(100% - 12px); background-color: white; box-shadow: 1px 1px 5px grey; z-index: 10;
+        position: absolute; left: 6px; top: 200px; width: calc(100% - 12px); background-color: white; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; z-index: 10;
     }
     div.addressPopup > form > fieldset > legend{
         line-height: 60px; font-size: 14px; font-weight: 400; display: block; width: 100%; text-align: center; border-bottom: 1px solid #eaeaea;
@@ -6196,7 +6196,7 @@
         line-height: 45px; font-size: 12px; font-weight: 400; background-color: black; text-align: center; color: white; text-decoration: none; display: block; width: 100%; 
     }
     div.balancePopup{
-        position: fixed; top: 200px; left: 10%; width: 80%; background-color: white; box-shadow: 1px 1px 5px gray; padding-bottom: 60px; z-index: 10;
+        position: absolute; top: 500px; left: 10%; width: 80%; background-color: white; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; padding-bottom: 60px; z-index: 10;
     }
     div.balancePopup > h2{
         position: relative; line-height: 60px; border-bottom: 1px solid #eaeaea; font-size: 14px; font-weight: 400; text-align: center; margin-bottom: 60px;
