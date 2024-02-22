@@ -148,6 +148,10 @@ function popupOffset(target,positionT){
         $(currentPopup).siblings().removeClass("active");
         yPos = $(positionT).offset().top;
         $(currentPopup).css("top",yPos);
+        $(window).resize(function(){
+            yPos = $(positionT).offset().top;
+            $(currentPopup).css("top",yPos);        
+        });
     });
     $(".btn_close").click(function(){
         $(currentPopup).removeClass("active");
@@ -163,6 +167,10 @@ function panelOffset(target,positionT){
         $(currentPanel).siblings().removeClass("active");
         yPos = $(positionT).offset().top;
         $(currentPanel).css("top",yPos);
+        $(window).resize(function(){
+            yPos = $(positionT).offset().top;
+            $(currentPanel).css("top",yPos);        
+        });
     });
     $(".btn_close").click(function(){
         $(currentPanel).removeClass("active");
