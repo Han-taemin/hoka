@@ -1109,6 +1109,18 @@ section.finderContainer div:last-of-type h3{
     header nav ul li ol li strong{
         display: block; color: black; font-size: 14px; font-weight: 500; margin-bottom: 10px; position: relative; line-height: 24px;
     }
+    header nav ul li ol li:first-of-type strong::after{
+        width: 85px;
+    }
+    header nav ul li ol li:nth-of-type(2) strong::after{
+        width: 46px;
+    }
+    header nav ul li ol li:nth-of-type(3) strong::after{
+        width: 56px;
+    }
+    header nav ul li ol li:last-of-type strong::after{
+        width: 44px;
+    }
     header nav ul li ol li p{
         color: black; font-size: 14px;
     }
@@ -1176,7 +1188,10 @@ section.finderContainer div:last-of-type h3{
         color: black; 
     }
     footer > div:nth-of-type(2) > div:first-of-type > a{
-        position: relative; line-height: 22px; width: 65px; display: block;
+        position: relative; line-height: 22px; display: block;
+    }
+    footer > div:nth-of-type(2) > div:first-of-type > a::after{
+        width: 62px;
     }
     footer > div:nth-of-type(2) > ul{
         margin-left: 10%; width: 60%; float: right;

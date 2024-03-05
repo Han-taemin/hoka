@@ -6603,10 +6603,10 @@
         display: block; font-size: 16px; font-weight: 700; margin-bottom: 20px; color:#ffa54b; font-style: normal; background-color: transparent;
     }
     section.mainContainer > div:first-of-type > div:last-of-type a{
-        color: black; font-size: 12px; line-height: 22px; position: relative; text-decoration: none; width: 65px;
+        color: black; font-size: 12px; line-height: 22px; position: relative; text-decoration: none; display: block;
     }
     section.mainContainer > div:first-of-type > div:last-of-type a::after{
-        display: block; content: ""; height: 1px; width: 100%; position: absolute; transform: scaleX(1); transform-origin: left; left: 0; bottom: 0px;
+        display: block; content: ""; height: 1px; width: 60px; position: absolute; transform: scaleX(1); transform-origin: left; left: 0; bottom: 0px;
         transition: transform 0.3s ease-in-out; background-color: black;
     }
     section.mainContainer > div:first-of-type > div:last-of-type a:hover::after{
