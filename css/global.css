@@ -1094,17 +1094,23 @@ section.finderContainer div:last-of-type h3{
         color: black; cursor: pointer;
     }
     header nav ul li ol{
-        display: none;
+        position: absolute; left: 0; opacity: 0; width: calc(100% - 40px); padding: 80px 20px;  background-color: white; 
+        transform: scaleY(0); transform-origin: top; transition: all 0.5s ease-in-out;
     }
     header nav ul li:hover ol{
-        display: flex;  width: calc(100% - 40px); position: absolute; left: 0; padding: 80px 20px; 
-        justify-content: space-between; background-color: white; 
+        opacity: 1; transform: scaleY(1);
+    }
+    header nav ul li:not(:last-of-type) ol{
+        display: flex; justify-content: space-between;
     }
     header nav ul li:not(:last-of-type) ol li{
         list-style: none; width: 24%; max-width: 430px;
     }
     header nav ul li ol li img{
-        margin-bottom: 20px; width: 100%;
+        margin-bottom: 20px; width: 100%; opacity: 0; transition: opacity 0.2s ease-in-out;
+    }
+    header nav ul li:hover ol li img{
+        opacity: 1;
     }
     header nav ul li ol li strong{
         display: block; color: black; font-size: 14px; font-weight: 500; margin-bottom: 10px; position: relative; line-height: 24px;
@@ -1124,8 +1130,11 @@ section.finderContainer div:last-of-type h3{
     header nav ul li ol li p{
         color: black; font-size: 14px;
     }
+    header nav ul li:last-of-type ol{
+        list-style: none;
+    }
     header nav ul li:last-of-type:hover ol{
-        display: block; list-style: none;
+        display: block;
     }
     header nav ul li:last-of-type:hover ol:after{
         content: ''; display: block; clear: both;
