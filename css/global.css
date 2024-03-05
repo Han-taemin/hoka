@@ -1044,10 +1044,6 @@ section.finderContainer div:last-of-type h3{
     footer a{
         text-decoration: none;
     }
-    header a:hover,
-    footer a:hover{
-        text-decoration: underline;
-    }
     header{
         position: fixed; z-index: 10; padding:20px; top: 10px; left: 10px; background-color: transparent; transition: background-color 0.5s ease-in-out;
         width: calc(100% - 20px); display: flex; align-items: center; box-sizing: border-box;
@@ -1075,15 +1071,17 @@ section.finderContainer div:last-of-type h3{
     }
     header > nav > ul > li > a,
     header > nav > ul > li strong{
-        color: white; font-size: 12px; font-weight: 500; line-height: 26px; display: block;
+        color: white; font-size: 12px; font-weight: 500; line-height: 26px; display: block; text-shadow: 1px 1px 3px #929292; position: relative;
     }
-    header > nav > ul > li strong:hover,
-    header > div input:hover{
-        text-decoration: underline;
+    header > nav > ul > li > a::after,
+    header > nav > ul > li strong::after,
+    footer > div:nth-of-type(2) > div:first-of-type > a::after{
+        display: block; content: ""; height: 1px; width: 100%; bottom: 0; left: 0; background-color: black; transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease-in-out;
     }
-    header > nav > ul > li > a,
-    header > nav > ul > li > strong{
-        text-shadow: 1px 1px 3px #929292;
+    header > nav > ul > li > a:hover::after,
+    header > nav > ul > li strong:hover::after,
+    footer > div:nth-of-type(2) > div:first-of-type > a:hover::after{
+        transform: scaleX(1);
     }
     header:hover > nav > ul > li > a,
     header:hover > nav > ul > li > strong{
@@ -1131,7 +1129,7 @@ section.finderContainer div:last-of-type h3{
         width: 195px; display: flex; justify-content: flex-end;
     }
     header > nav > div input[type=button]{
-        border: none; background-color:transparent; color: black; font-size: 12px; font-weight: 500; line-height: 26px; padding: 0; cursor: pointer;
+        border: none; background-color:transparent; color: black; font-size: 12px; font-weight: 500; line-height: 26px; padding: 0; cursor: pointer; 
     }
     header > nav > div input[type=button]:not(:first-of-type){
         margin-left: 30px;
@@ -1164,7 +1162,7 @@ section.finderContainer div:last-of-type h3{
         content: ''; display: block; clear: both;
     }
     footer > div:nth-of-type(2) a{
-        font-size: 12px; display: block;
+        font-size: 12px;
     }
     footer > div:nth-of-type(2) > div{
         width: 30%; float: left;
@@ -1173,7 +1171,10 @@ section.finderContainer div:last-of-type h3{
         font-size: 16px; font-weight: 200; color: black; margin-bottom: 20px;
     }   
     footer > div:nth-of-type(2) > div > a{
-        color: black;
+        color: black; 
+    }
+    footer > div:nth-of-type(2) > div:first-of-type > a{
+        position: relative; line-height: 22px; width: 65px; display: block;
     }
     footer > div:nth-of-type(2) > ul{
         margin-left: 10%; width: 60%; float: right;
@@ -1191,7 +1192,10 @@ section.finderContainer div:last-of-type h3{
         width: 10%
     }
     footer > div:nth-of-type(2) > ul > li a{
-        color: #acacac; 
+        color: #acacac;  display: block; 
+    }
+    footer > div:nth-of-type(2) > ul > li a:hover{
+        text-decoration: underline;
     }
     footer > div:nth-of-type(2) > ul > li a:not(:last-of-type){
         margin-bottom: 10px;
@@ -1260,5 +1264,8 @@ section.finderContainer div:last-of-type h3{
     }
     footer > ul > li > a{
         color: #cccccc; font-size: 10px; display: block; line-height: 20px;
+    }
+    footer > ul > li > a:hover{
+        text-decoration: underline;
     }
 }
