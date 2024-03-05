@@ -1049,7 +1049,7 @@ section.finderContainer div:last-of-type h3{
         text-decoration: underline;
     }
     header{
-        position: fixed; z-index: 10; padding:20px; top: 10px; left: 10px;
+        position: fixed; z-index: 10; padding:20px; top: 10px; left: 10px; background-color: transparent; transition: background-color 0.5s ease-in-out;
         width: calc(100% - 20px); display: flex; align-items: center; box-sizing: border-box;
     }
     header:hover{
