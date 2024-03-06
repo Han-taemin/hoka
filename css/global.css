@@ -1082,7 +1082,7 @@ section.finderContainer div:last-of-type h3{
     header > nav > ul > li > a:hover::after,
     header > nav > ul > li > strong:hover::after,
     footer > div:nth-of-type(2) > div:first-of-type > a:hover::after,
-    header nav ul li ol li strong:hover::after{
+    header nav ul li ol li:hover strong::after{
         transform: scaleX(1);
     }
     header:hover > nav > ul > li > a,
