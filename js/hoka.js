@@ -219,4 +219,8 @@ function navActive(){
             $(".fixBanner").css("display","none");
         }
     });
+    if($(".mainContainer").length == false){
+        $("header > nav > ul > li > *:first-child").css("color","black");
+        $("header > nav > div > input[type=button]").css("color","black");
+    }
 }
