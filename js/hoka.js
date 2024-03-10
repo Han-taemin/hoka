@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
     $("#videoBox").fitVids();
     justBack();
     muiClose();
@@ -149,8 +149,10 @@ function popupOffset(target,positionT){
         yPos = $(positionT).offset().top;
         $(currentPopup).css("top",yPos);
         $(window).resize(function(){
-            yPos = $(positionT).offset().top;
-            $(currentPopup).css("top",yPos);        
+            if($(currentPopup).hasClass("active")){
+                yPos = $(positionT).offset().top;
+                $(currentPopup).css("top",yPos);    
+            }
         });
     });
     $(".btn_close").click(function(){
@@ -168,8 +170,11 @@ function panelOffset(target,positionT){
         yPos = $(positionT).offset().top;
         $(currentPanel).css("top",yPos);
         $(window).resize(function(){
-            yPos = $(positionT).offset().top;
-            $(currentPanel).css("top",yPos);        
+            if($(currentPanel).hasClass("active")){
+                yPos = $(positionT).offset().top;
+                $(currentPanel).css("top",yPos);  
+                console.log(yPos);
+            }
         });
     });
     $(".btn_close").click(function(){

@@ -57,19 +57,16 @@
     section.mainContainer > div:nth-of-type(2) > ul li figure figcaption span{
         font-size: 12px; position: absolute; right: 0; top: 0; line-height: 20px;
     }
-    section.mainContainer > div:nth-of-type(2) > ul li > span{
-        display: block;
-    }
-    section.mainContainer > div:nth-of-type(2) > ul li > span > a,
-    section.mainContainer > div:last-of-type div span a{
+    section.mainContainer > div:nth-of-type(2) > ul li > div > span > a,
+    section.mainContainer > div:last-of-type div ul > li > a{
         text-decoration: none; font-size: 12px; 
     }
-    section.mainContainer > div:nth-of-type(2) > ul li > span > a:first-of-type,
-    section.mainContainer > div:last-of-type div span a:first-of-type{
+    section.mainContainer > div:nth-of-type(2) > ul li > div > span:first-of-type > a,
+    section.mainContainer > div:last-of-type div ul > li:first-of-type > a{
         color: #ffd5ff;
     }
-    section.mainContainer > div:nth-of-type(2) > ul li > span > a:last-of-type,
-    section.mainContainer > div:last-of-type div span a:last-of-type{
+    section.mainContainer > div:nth-of-type(2) > ul li > div > span:last-of-type > a,
+    section.mainContainer > div:last-of-type div ul > li:last-of-type > a{
         color: #00a6ff; margin-left: 10px;
     }
     section.mainContainer > div:nth-of-type(3){
@@ -144,8 +141,8 @@
     section.mainContainer > div:last-of-type div figure{
         margin-bottom: 10px;
     }
-    section.mainContainer > div:last-of-type div span{
-        display: block;
+    section.mainContainer > div:last-of-type div > ul{
+        display: flex;
     }
     section.itemContainer{
         margin-bottom: 75px;
@@ -3269,20 +3266,16 @@
     section.mainContainer > div:nth-of-type(2) > ul li figure figcaption span{
         font-size: 12px; position: absolute; right: 0; top: 0; line-height: 20px;
     }
-    section.mainContainer > div:nth-of-type(2) > ul li > span,
-    section.mainContainer > div:last-of-type div{
-        display: block;
-    }
-    section.mainContainer > div:nth-of-type(2) > ul li > span > a,
-    section.mainContainer > div:last-of-type div span a{
+    section.mainContainer > div:nth-of-type(2) > ul li > div > span > a,
+    section.mainContainer > div:last-of-type div > ul > li > a{
         text-decoration: none; font-size: 12px; 
     }
-    section.mainContainer > div:nth-of-type(2) > ul li > span > a:first-of-type,
-    section.mainContainer > div:last-of-type div span a:first-of-type{
+    section.mainContainer > div:nth-of-type(2) > ul li > div > span:first-of-type > a,
+    section.mainContainer > div:last-of-type div >ul > li:first-of-type > a{
         color: #ffd5ff;
     }
-    section.mainContainer > div:nth-of-type(2) > ul li > span > a:last-of-type,
-    section.mainContainer > div:last-of-type div span a:last-of-type{
+    section.mainContainer > div:nth-of-type(2) > ul li > div > span:last-of-type > a,
+    section.mainContainer > div:last-of-type div ul > li:last-of-type > a{
         color: #00a6ff; margin-left: 10px;
     }
     section.mainContainer > div:nth-of-type(3){
@@ -3346,12 +3339,11 @@
     section.mainContainer > div:last-of-type > div{
         width: 49%;
     }
-    section.mainContainer > div:last-of-type a,
-    section.mainContainer > div:last-of-type div span a{
-        text-decoration: none; 
+    section.mainContainer > div:last-of-type > div > ul{
+        display: flex;
     }
-    section.mainContainer > div:last-of-type div span a:hover{
-        text-decoration: underline;
+    section.mainContainer > div:last-of-type a{
+        text-decoration: none; 
     }
     section.mainContainer > div:last-of-type a img,
     section.mainContainer > div:last-of-type div figure img{
@@ -6617,7 +6609,7 @@
     }
     section.mainContainer > div:nth-of-type(2) h3,
     section.mainContainer > div:nth-of-type(4) h3{
-        font-size: 28px; font-weight: 700;
+        font-size: 28px; font-weight: 400; line-height: 35px;
     }
     section.mainContainer > div:nth-of-type(2) h3{
         margin-bottom: 40px;
@@ -6643,37 +6635,25 @@
     section.mainContainer > div:nth-of-type(2) > ul li figure figcaption span{
         font-size: 12px; position: absolute; right: 0; top: 0;
     }
-    section.mainContainer > div:nth-of-type(2) > ul li > span{
-        position: absolute; left: 0; top: 0; background-color: black; opacity: 0.5; width: 100%; height: 100%;
-        display: none; text-align: center;
+    section.mainContainer > div:nth-of-type(2) > ul li > div{
+        position: absolute; left: 0; top: 0; width: 100%; height: calc(100% - 56px);
+        display: none; text-align: center; transition: opacity 0.2s ease-in-out;
     }
-    section.mainContainer > div:nth-of-type(2) > ul li:hover > span{
-        display: flex; justify-content: center; align-items: center; height: calc(100% - 56px);
+    section.mainContainer > div:nth-of-type(2) > ul li:hover > div{
+        display: flex; 
     }
-    section.mainContainer > div:nth-of-type(2) > ul li > span a{
-        font-size: 32px; font-weight: 200; text-decoration: none; display: block; position: relative; line-height: 42px;
+    section.mainContainer > div:nth-of-type(2) > ul li > div > span,
+    section.mainContainer > div:last-of-type > div > ul > li{
+        display: block; width: 50%; height: 100%; background-color: black; opacity: 0.3; position: relative;
+        transition: opacity 0.35s ease-in-out;
     }
-    section.mainContainer > div:nth-of-type(2) > ul li > span a:first-child{
-        color: #ffd5ff;
+    section.mainContainer > div:nth-of-type(2) > ul li > div > span:hover,
+    section.mainContainer > div:last-of-type > div > ul > li:hover{
+        opacity: 0.7;
     }
-    section.mainContainer > div:nth-of-type(2) > ul li > span a:first-child::after,
-    section.mainContainer > div:last-of-type div span a:first-child::after{
-        background-color: #ffd5ff;
-    }
-    section.mainContainer > div:nth-of-type(2) > ul li > span a:nth-child(2){
-        color: #00a6ff; margin-left: 20%;
-    }
-    section.mainContainer > div:nth-of-type(2) > ul li > span a:nth-child(2)::after,
-    section.mainContainer > div:last-of-type div span a:last-child::after{
-        background-color: #00a6ff;
-    }
-    section.mainContainer > div:nth-of-type(2) > ul li > span a::after,
-    section.mainContainer > div:last-of-type div span a::after{
-        display: block; content: ""; position: absolute; left: 0; bottom: 0; height: 1px; width: 100%; transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease-in-out;
-    }
-    section.mainContainer > div:nth-of-type(2) > ul li > span a:hover::after,
-    section.mainContainer > div:last-of-type div span a:hover::after{
-        transform: scaleX(1);
+    section.mainContainer > div:nth-of-type(2) > ul li > div > span > a{
+        color: white; text-decoration: none; font-size: 30px; font-weight: 600; line-height: 100px; position: absolute;
+        top: calc((100% - 100px) / 2); left: 0; width: 100%;
     }
     section.mainContainer > div:nth-of-type(3){
         margin-bottom: 85px; position: relative;
@@ -6767,25 +6747,18 @@
     section.mainContainer > div:last-of-type a span{
         font-size: 14px; font-weight: 400; color: black; 
     }
-    section.mainContainer > div:last-of-type div{
+    section.mainContainer > div:last-of-type > div{
         position: relative;
     }
-    section.mainContainer > div:last-of-type div span{
-        position: absolute; left: 0; top: 0; display: none; 
-        width: 100%; height: 100%; text-align: center;
+    section.mainContainer > div:last-of-type > div > ul{
+        position: absolute; left: 0; top: 0; display: none; width: 100%; height: calc(100% - 68px); text-align: center;
     }
-    section.mainContainer > div:last-of-type div:hover span{
-        display: flex; height: calc(100% - 68px);
-        background-color: black; opacity: 0.5; justify-content: center; align-items: center;
+    section.mainContainer > div:last-of-type > div:hover > ul{
+        display: flex; 
     }
-    section.mainContainer > div:last-of-type div span a{
-        font-size: 60px; font-weight: 200; position: relative;
-    }
-    section.mainContainer > div:last-of-type div span a:first-child{
-        color: #ffd5ff;
-    }
-    section.mainContainer > div:last-of-type div span a:last-child{
-        color: #00a6ff; margin-left: 15%;
+    section.mainContainer > div:last-of-type > div > ul > li > a{
+        color: white; display: block; position: absolute; top: calc((100% - 100px) / 2); width: 100%; font-size: 60px; line-height: 100px; font-weight: 500;
+        text-decoration: none;
     }
     section.itemContainer{
         margin-bottom: 75px;
