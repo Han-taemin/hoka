@@ -6581,7 +6581,7 @@
         margin-bottom: 70px; position: relative;
     }
     section.mainContainer > div:first-of-type > div#videoBox{
-        width: 75%;
+        width: 75%; background-color: black;
     }
     section.mainContainer > div:first-of-type > div:last-of-type{
         height: 100%; width: 20%; display: flex; position: absolute; right: 0;
