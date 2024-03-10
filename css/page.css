@@ -6,30 +6,37 @@
     section.mainContainer ul{
         list-style: none;
     }
-    section.mainContainer > div:first-of-type,
+    section.mainContainer > div#videoBox,
     section.mainContainer > div:nth-of-type(2),
     section.mainContainer > div:nth-of-type(3),
     section.mainContainer > div:nth-of-type(4),
     section.mainContainer > div:last-of-type > a{
         margin-bottom: 40px; 
     }
-    section.mainContainer > div:first-of-type{
+    section.mainContainer > div#videoBox{
         position: relative;
     }
-    section.mainContainer > div:first-of-type > div#videoBox{
+    section.mainContainer > div#videoBox > video{
         width: 100%; margin-bottom: 20px;
     }
-    section.mainContainer > div:first-of-type > div:last-of-type{
-        display: flex; flex-flow: column wrap; justify-content: center; padding: 0 15px;
+    section.mainContainer > div#videoBox > div{
+        display: flex; flex-flow: column wrap; justify-content: center; padding: 0 15px; box-sizing: border-box;
     }
-    section.mainContainer > div:first-of-type > div:last-of-type h2{
+    section.mainContainer > div#videoBox > div > h2{
         font-size: 14px; font-weight: 400; margin-bottom: 20px;
     }
-    section.mainContainer > div:first-of-type > div:last-of-type h2 mark{
+    section.mainContainer > div#videoBox > div > h2 mark{
         display: block; font-size: 12px; font-weight: 500; margin-bottom: 20px; color:#ffa54b; font-style: normal; background-color: transparent;
     }
-    section.mainContainer > div:first-of-type > div:last-of-type a{
-        color: black; font-size: 12px;
+    section.mainContainer > div#videoBox > div > p{
+        font-size: 12px; line-height: 22px; width: 100%; margin-bottom: 20px;
+    }
+    section.mainContainer > div#videoBox > div > a{
+        color: black; font-size: 12px; line-height: 28px; width: 140px; border: 1px solid black; box-sizing: border-box; text-align: center;
+        display: block; background-color: transparent; transition: all 0.35s ease-in-out; text-decoration: none;
+    }
+    section.mainContainer > div#videoBox > div > a:hover{
+        color: white; background-color: black;
     }
     section.mainContainer > div:nth-of-type(2) h3,
     section.mainContainer > div:nth-of-type(4) h3{
@@ -3211,31 +3218,36 @@
     section.mainContainer ul{
         list-style: none;
     }
-    section.mainContainer > div:first-of-type,
+    section.mainContainer > div#videoBox,
     section.mainContainer > div:nth-of-type(2),
     section.mainContainer > div:nth-of-type(3),
     section.mainContainer > div:nth-of-type(4){
         margin-bottom: 75px; 
     }
-    section.mainContainer > div:first-of-type{
-        position: relative;
+    section.mainContainer > div#videoBox{
+        margin-bottom: 70px; position: relative; 
     }
-    section.mainContainer > div:first-of-type > div#videoBox{
-        width: 75%;
+    section.mainContainer > div#videoBox > video{
+        width: 100%;
     }
-    section.mainContainer > div:first-of-type > div:last-of-type{
-        height: 100%; width: 20%; display: flex; position: absolute; right: 0;
-        top: 0; margin-left: 5%;
-        flex-flow: column wrap; justify-content: center;
+    section.mainContainer > div#videoBox > div{
+        width: calc((100% - 48px)); position: absolute; left: 24px; bottom: 40px;
     }
-    section.mainContainer > div:first-of-type > div:last-of-type h2{
-        font-size: 16px; font-weight: 400; margin-bottom: 20px;
+    section.mainContainer > div#videoBox > div > h2{
+        font-size: 30px; font-weight: 400; margin-bottom: 20px; color: white;
     }
-    section.mainContainer > div:first-of-type > div:last-of-type h2 mark{
-        display: block; font-size: 14px; font-weight: 500; margin-bottom: 20px; color:#ffa54b; font-style: normal; background-color: transparent;
+    section.mainContainer > div#videoBox > div > h2 > mark{
+        display: block; font-size: 16px; font-weight: 500; margin-bottom: 20px; color:#ffa54b; font-style: normal; background-color: transparent;
     }
-    section.mainContainer > div:first-of-type > div:last-of-type a{
-        color: black; font-size: 12px;
+    section.mainContainer > div#videoBox > div > p{
+        font-size: 18px; line-height: 28px; width: 70%; color: white; font-weight: 300; margin-bottom: 30px;
+    }
+    section.mainContainer > div#videoBox > div > a{
+        color: white; font-size: 14px; line-height: 38px; text-decoration: none; display: block; width: 180px; text-align: center; border: 1px solid white; box-sizing: border-box;
+        background-color: transparent; transition: all 0.35s ease-in-out;
+    }
+    section.mainContainer > div#videoBox > div > a:hover{
+        background-color: white; color: black;
     }
     section.mainContainer > div:nth-of-type(2) h3,
     section.mainContainer > div:nth-of-type(4) h3{
@@ -6577,32 +6589,30 @@
     section.mainContainer ul{
         list-style: none;
     }
-    section.mainContainer > div:first-of-type{
-        margin-bottom: 70px; position: relative;
+    section.mainContainer > div#videoBox{
+        margin-bottom: 70px; position: relative; 
     }
-    section.mainContainer > div:first-of-type > div#videoBox{
-        width: 75%; background-color: black;
+    section.mainContainer > div#videoBox > video{
+        width: 100%;
     }
-    section.mainContainer > div:first-of-type > div:last-of-type{
-        height: 100%; width: 20%; display: flex; position: absolute; right: 0;
-        top: 0; margin-left: 5%;
-        flex-flow: column wrap; justify-content: center; 
+    section.mainContainer > div#videoBox > div{
+        width: calc((100% - 80px)); position: absolute; left: 40px; bottom: 60px;
     }
-    section.mainContainer > div:first-of-type > div:last-of-type h2{
-        font-size: 30px; font-weight: 400; margin-bottom: 30px;
+    section.mainContainer > div#videoBox > div > h2{
+        font-size: 30px; font-weight: 400; margin-bottom: 30px; color: white;
     }
-    section.mainContainer > div:first-of-type > div:last-of-type h2 mark{
-        display: block; font-size: 16px; font-weight: 700; margin-bottom: 20px; color:#ffa54b; font-style: normal; background-color: transparent;
+    section.mainContainer > div#videoBox > div > h2 > mark{
+        display: block; font-size: 16px; font-weight: 500; margin-bottom: 20px; color:#ffa54b; font-style: normal; background-color: transparent;
     }
-    section.mainContainer > div:first-of-type > div:last-of-type a{
-        color: black; font-size: 12px; line-height: 22px; position: relative; text-decoration: none; display: block;
+    section.mainContainer > div#videoBox > div > p{
+        font-size: 18px; line-height: 28px; width: 30%; color: white; font-weight: 300; margin-bottom: 50px;
     }
-    section.mainContainer > div:first-of-type > div:last-of-type a::after{
-        display: block; content: ""; height: 1px; width: 60px; position: absolute; transform: scaleX(1); transform-origin: left; left: 0; bottom: 0px;
-        transition: transform 0.3s ease-in-out; background-color: black;
+    section.mainContainer > div#videoBox > div > a{
+        color: white; font-size: 14px; line-height: 38px; text-decoration: none; display: block; width: 180px; text-align: center; border: 1px solid white; box-sizing: border-box;
+        background-color: transparent; transition: all 0.35s ease-in-out;
     }
-    section.mainContainer > div:first-of-type > div:last-of-type a:hover::after{
-        transform: scaleX(0);
+    section.mainContainer > div#videoBox > div > a:hover{
+        background-color: white; color: black;
     }
     section.mainContainer > div:nth-of-type(2){
         margin-bottom: 80px;

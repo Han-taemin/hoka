@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#videoBox").fitVids();
     justBack();
-    muiClose();
+    muiControl();
     navActive();
     slider(".way3Carousel",3,590,35,false,true);
     slider(".humanFlySlider",6,290,20,false,false);
@@ -17,7 +17,6 @@ $(document).ready(function(){
     panelControl("header div input");
     panelControl(".detailContainer input[value='How to find my HOKA size']");
     panelControl("input[value='Add to Cart']");
-    justToggle("button.mui");
     justToggle("section.storeContainer > div > div > ul > li")
     parentToggle("footer > div:nth-of-type(2) > div strong");
     parentToggle("footer > div:nth-of-type(2) > ul > li strong");
@@ -133,8 +132,15 @@ function autoHeight(){
     target = $(".detailContainer > div > ul li video");
     $(target).css("height",applyVal);
 }
-function muiClose(){
+function muiControl(){
     var mui = $("button.mui");
+    $(mui).click(function(){
+        $(this).toggleClass("active");
+        $("header").css("background-color","white")
+        if($(mui).hasClass("active") == false){
+            $("header").css("background-color","transparent")      
+        }
+    });
     $("header div input").click(function(){
         mui.removeClass("active");
     });

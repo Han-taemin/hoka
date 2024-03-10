@@ -23,7 +23,7 @@
         ref = document.getElementsByTagName('base')[0] || document.getElementsByTagName('script')[0];
 
     div.className = 'fit-vids-style';
-    div.innerHTML = '&shy;<style>         \
+    div.innerHTML = '<style>         \
       .fluid-width-video-wrapper {        \
          width: 100%;                     \
          position: relative;              \
@@ -33,7 +33,7 @@
       .fluid-width-video-wrapper iframe,  \
       .fluid-width-video-wrapper object,  \
       .fluid-width-video-wrapper embed,   \
-      .fluid-width-video-wrapper video {  \
+      .fluid-width-video-wrapper source {  \
          position: absolute;              \
          top: 0;                          \
          left: 0;                         \
@@ -55,7 +55,7 @@
         "iframe[src*='www.kickstarter.com']",
         "object",
         "embed",
-        "video"
+        "source"
       ];
 
       if (settings.customSelector) {

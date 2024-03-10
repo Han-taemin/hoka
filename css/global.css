@@ -231,9 +231,18 @@ section.finderContainer div:last-of-type h3{
     footer a{
         text-decoration: none;
     }
+    .fixBanner{
+        position: fixed; top: 0; left: 0; width: 100%; text-align: center; background-color: black; z-index: 10;
+    }
+    .fixBanner > a{
+        line-height: 30px; color: white; font-size: 12px; text-decoration: none;
+    }
     header{
-        position: fixed; z-index: 1; padding:20px; top: 4px; left: 4px; 
+        position: fixed; z-index: 1; padding:20px; top: 34px; left: 4px; transition: top 0.5s ease-in-out;
         width: calc(100% - 8px); display: flex; align-items: center; box-sizing: border-box;
+    }
+    header.active{
+        top: 4px;
     }
     header h1{
         width: 5.5%; min-width: 99px; margin: 0 auto; position: relative; z-index: 100; height: 30px;
@@ -272,8 +281,11 @@ section.finderContainer div:last-of-type h3{
         display: none;
     }
     header > button.mui.active + nav{
-        display: flex; flex-direction: column; justify-content: space-between; position: fixed; width: calc(100% - 8px); height: calc(100% - 8px); padding: 70px 0 50px; box-sizing: border-box; background-color: white; left: 4px; top: 4px;
-        box-shadow: 1px 1px 5px #acacac; overflow: auto; z-index: 1;
+        display: flex; flex-direction: column; justify-content: space-between; position: fixed; width: calc(100% - 8px); height: calc(100% - 8px); padding: 0 0 50px; box-sizing: border-box; background-color: white; left: 4px; top: 104px;
+        overflow: auto; z-index: 1; transition: top 0.5s ease-in-out;
+    }
+    header.active > button.mui.active + nav{
+        top: 70px;
     }
     header > nav > ul > li{
         position: relative; padding: 0 25px;
@@ -640,9 +652,18 @@ section.finderContainer div:last-of-type h3{
     footer a{
         text-decoration: none;
     }
+    .fixBanner{
+        position: fixed; top: 0; left: 0; width: 100%; text-align: center; background-color: black; z-index: 10;
+    }
+    .fixBanner > a{
+        line-height: 40px; color: white; font-size: 14px; text-decoration: none;
+    }
     header{
-        position: fixed; z-index: 1; padding:20px; top: 6px; left: 6px; 
+        position: fixed; z-index: 1; padding:20px; top: 46px; left: 6px; transition: top 0.5s ease-in-out;
         width: calc(100% - 12px); display: flex; align-items: center; box-sizing: border-box;
+    }
+    header.active{
+        top: 6px;
     }
     header h1{
         width: 5.5%; min-width: 99px; margin: 0 auto; position: relative; z-index: 100; height: 30px;
@@ -681,8 +702,11 @@ section.finderContainer div:last-of-type h3{
         display: none;
     }
     header > button.mui.active + nav{
-        display: flex; flex-direction: column; justify-content: space-between; position: fixed; width: calc(100% - 12px); height: calc(100% - 12px); padding: 70px 0 50px; box-sizing: border-box; background-color: white; left: 6px; top: 6px;
-        box-shadow: 1px 1px 5px #acacac; overflow: auto; z-index: 1;
+        display: flex; flex-direction: column; justify-content: space-between; position: fixed; width: calc(100% - 12px); height: calc(100% - 6px); padding: 0 0 50px; box-sizing: border-box; background-color: white; left: 6px; top: 116px;
+        overflow-y: scroll; z-index: 1; transition: top 0.5s ease-in-out;
+    }
+    header.active > button.mui.active + nav{
+        top: 70px;
     }
     header > nav > ul > li{
         padding: 0 25px;
@@ -1064,7 +1088,7 @@ section.finderContainer div:last-of-type h3{
         background-color: rgba(255, 255, 255, 1);
     }
     header h1{
-        width: 5.5%; min-width: 99px;
+        width: 100px; 
     }
     header h1 a{
         display: block;
@@ -1073,7 +1097,7 @@ section.finderContainer div:last-of-type h3{
         width: 100%; max-width: 99px;
     }
     header > nav{
-        margin-left: 1.5%; display: flex; justify-content: space-between; width: 94.5%;
+        margin-left: 20px; display: flex; justify-content: space-between; width: calc(100% - 120px);
     }
     header > button.mui{
         display: none;
@@ -1083,7 +1107,7 @@ section.finderContainer div:last-of-type h3{
     }
     header > nav > ul > li > a,
     header > nav > ul > li > strong{
-        color: white; font-size: 12px; font-weight: 500; line-height: 26px; display: block; position: relative;
+        color: white; font-size: 12px; font-weight: 500; line-height: 26px; display: block; position: relative; transition: color 0.5s ease-in-out;
     }
     header > nav > ul > li > a::after,
     header > nav > ul > li > strong::after,
@@ -1097,14 +1121,10 @@ section.finderContainer div:last-of-type h3{
     header nav ul li ol li:hover strong::after{
         transform: scaleX(1);
     }
-    header:hover > nav > ul > li > a,
-    header:hover > nav > ul > li > strong{
-        text-shadow: none;
-    }
     header:hover > nav > ul > li > :first-child,
-    header:hover > div input,
+    header:hover > nav > div > input[type=button],
     header.active > nav > ul > li > :first-child,
-    header.active > div input{
+    header.active > nav > div > input[type=button]{
         color: black; cursor: pointer;
     }
     header nav ul li ol{
@@ -1163,12 +1183,13 @@ section.finderContainer div:last-of-type h3{
         display: block; color: black; font-size: 12px; margin-bottom: 10px;
     }
     header > nav > div{
-        width: 195px; display: flex; justify-content: flex-end;
+        display: flex; justify-content: flex-end;
     }
-    header > nav > div input[type=button]{
-        border: none; background-color:transparent; color: black; font-size: 12px; font-weight: 500; line-height: 26px; padding: 0; cursor: pointer; 
+    header > nav > div > input[type=button]{
+        border: none; background-color:transparent; font-size: 12px; font-weight: 500; line-height: 26px; padding: 0; cursor: pointer; color: white;
+        transition: color 0.5s ease-in-out;
     }
-    header > nav > div input[type=button]:not(:first-of-type){
+    header > nav > div > input[type=button]:not(:first-of-type){
         margin-left: 30px;
     }
     footer{
