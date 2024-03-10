@@ -1040,16 +1040,28 @@ section.finderContainer div:last-of-type h3{
     div.loginAccPanel span a:last-of-type{
         text-decoration: none;
     }
+    .fixBanner{
+        position: fixed; top: 0; left: 0; width: 100%; text-align: center; background-color: black; z-index: 10;
+    }
+    .fixBanner > a{
+        line-height: 40px; color: white; font-size: 14px; text-decoration: none;
+    }
     header a,
     footer a{
         text-decoration: none;
     }
     header{
-        position: fixed; z-index: 10; padding:20px; top: 10px; left: 10px; background-color: transparent; transition: background-color 0.5s ease-in-out;
-        width: calc(100% - 20px); display: flex; align-items: center; box-sizing: border-box;
+        position: fixed; z-index: 10; padding:20px; top: 10px; left: 10px; background-color: transparent; transition: all 0.5s ease-in-out;
+        width: calc(100% - 20px); display: flex; align-items: center; box-sizing: border-box; transform: translateY(40px);
     }
     header:hover{
-        background-color: white;
+        background-color: rgba(255, 255, 255, 1); 
+    }
+    header.active{
+        background-color: rgba(255, 255, 255, 0.9); transform: translateY(0); 
+    }
+    header.active:hover{
+        background-color: rgba(255, 255, 255, 1);
     }
     header h1{
         width: 5.5%; min-width: 99px;
@@ -1071,7 +1083,7 @@ section.finderContainer div:last-of-type h3{
     }
     header > nav > ul > li > a,
     header > nav > ul > li > strong{
-        color: white; font-size: 12px; font-weight: 500; line-height: 26px; display: block; text-shadow: 1px 1px 3px #929292; position: relative;
+        color: white; font-size: 12px; font-weight: 500; line-height: 26px; display: block; position: relative;
     }
     header > nav > ul > li > a::after,
     header > nav > ul > li > strong::after,
@@ -1090,11 +1102,13 @@ section.finderContainer div:last-of-type h3{
         text-shadow: none;
     }
     header:hover > nav > ul > li > :first-child,
-    header:hover > div input{
+    header:hover > div input,
+    header.active > nav > ul > li > :first-child,
+    header.active > div input{
         color: black; cursor: pointer;
     }
     header nav ul li ol{
-        position: absolute; left: 0; opacity: 0; width: calc(100% - 40px); padding: 80px 20px;  background-color: white; 
+        position: fixed; left: 0; top: 69px; opacity: 0; width: calc(100% - 40px); padding: 80px 20px;  background-color: white; 
         transform: scaleY(0); transform-origin: top; transition: all 0.5s ease-in-out;
     }
     header nav ul li:hover ol{

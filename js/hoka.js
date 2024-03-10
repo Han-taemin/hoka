@@ -2,6 +2,7 @@ $(document).ready(function(){
     $("#videoBox").fitVids();
     justBack();
     muiClose();
+    navActive();
     slider(".way3Carousel",3,590,35,false,true);
     slider(".humanFlySlider",6,290,20,false,false);
     slider("section.finderContainer ul",3,400,100,false,false);
@@ -205,6 +206,17 @@ function asideNone(target){
                     $(aside).css("display","block");
                 }
             });
+        }
+    });
+}
+function navActive(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() == 0){
+            $("header").removeClass("active");
+            $(".fixBanner").css("display","block");
+        }else{
+            $("header").addClass("active");
+            $(".fixBanner").css("display","none");
         }
     });
 }
