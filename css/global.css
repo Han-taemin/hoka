@@ -297,6 +297,13 @@ section.finderContainer div:last-of-type h3{
     header.active > button.mui.active + nav{
         top: 74px; height: calc(100% - 84px);
     }
+    header > .mui.active + nav::after{
+        display: block; content: ""; position: fixed; width: calc(100% - 8px); height: 70px; top: 34px; left: 4px;
+        background-color: white; transition: top 0.5s ease-in-out;
+    }
+    header.active > .mui.active + nav::after{
+        top: 4px;
+    }
     header > nav > ul > li{
         position: relative; padding: 0 25px;
     }
@@ -727,6 +734,13 @@ section.finderContainer div:last-of-type h3{
     }
     header.active > button.mui.active + nav{
         top: 76px; height: calc(100% - 86px);
+    }
+    header > .mui.active + nav::after{
+        display: block; content: ""; position: fixed; width: calc(100% - 12px); height: 70px; top: 46px; left: 6px;
+        background-color: white; transition: top 0.5s ease-in-out;
+    }
+    header.active > .mui.active + nav::after{
+        top: 6px;
     }
     header > nav > ul > li{
         padding: 0 25px;
