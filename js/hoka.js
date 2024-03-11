@@ -52,7 +52,7 @@ function popupControl(target){
     $(target).click(function(){
         currentPopup = "." + $(this).attr("data-popup");
         $(currentPopup).addClass("active");
-        $(currentPopup).siblings().removeClass("active");
+        $(currentPopup).siblings().not($("header,.fixBanner")).removeClass("active");
     });
     $(".btn_close").click(function(){
         $(currentPopup).removeClass("active");
@@ -63,7 +63,7 @@ function panelControl(target){
     $(target).click(function(){
         currentPanel = "." + $(this).attr("data-panel");
         $(currentPanel).addClass("active");
-        $(currentPanel).siblings().removeClass("active");
+        $(currentPanel).siblings().not($("header,.fixBanner")).removeClass("active");
     });
     $(".btn_close").click(function(){
         $(currentPanel).removeClass("active");
@@ -121,7 +121,7 @@ function photoPopup(target){
     var currentPopup = null;
     $(target).click(function(){
         currentPopup = "." + $(this).attr("data-popup");
-        $(target).parent().siblings().removeClass("active");
+        $(target).parent().siblings().not($("header,.fixBanner")).removeClass("active");
         $(currentPopup).addClass("active");
     });
     stepper(target);
@@ -136,13 +136,10 @@ function muiControl(){
     var mui = $("button.mui");
     $(mui).click(function(){
         $(this).toggleClass("active");
-        $("header").css("background-color","white")
-        if($(mui).hasClass("active") == false){
-            $("header").css("background-color","transparent")      
-        }
-    });
-    $("header div input").click(function(){
-        mui.removeClass("active");
+        $("header div input").click(function(){
+            mui.removeClass("active");
+        });
+        $(mui).parent().siblings().not($("header,.fixBanner")).removeClass("active");
     });
 }
 function popupOffset(target,positionT){
@@ -152,7 +149,7 @@ function popupOffset(target,positionT){
     $(target).click(function(){
         currentPopup = "." + $(this).attr("data-popup");
         $(currentPopup).addClass("active");
-        $(currentPopup).siblings().removeClass("active");
+        $(currentPopup).siblings().not($("header,.fixBanner")).removeClass("active");
         yPos = $(positionT).offset().top;
         $(currentPopup).css("top",yPos);
         $(window).resize(function(){
@@ -173,7 +170,7 @@ function panelOffset(target,positionT){
     $(target).click(function(){
         currentPanel = "." + $(this).attr("data-panel");
         $(currentPanel).addClass("active");
-        $(currentPanel).siblings().removeClass("active");
+        $(currentPanel).siblings().not($("header,.fixBanner")).removeClass("active");
         yPos = $(positionT).offset().top;
         $(currentPanel).css("top",yPos);
         $(window).resize(function(){
@@ -219,10 +216,10 @@ function navActive(){
     $(window).scroll(function(){
         if($(window).scrollTop() == 0){
             $("header").removeClass("active");
-            $(".fixBanner").css("display","block");
+            $(".fixBanner").removeClass("active");
         }else{
             $("header").addClass("active");
-            $(".fixBanner").css("display","none");
+            $(".fixBanner").addClass("active");
         }
     });
     if($(".mainContainer").length == false){

@@ -97,13 +97,29 @@ section.finderContainer div:last-of-type h3{
     section[class*="920p"] > div{
         padding: 0 15px; margin: 0 auto; box-sizing: border-box;
     }
+    .fixBanner{
+        display: block; position: fixed; top: 0; left: 0; width: 100%; text-align: center; background-color: black; z-index: 10;
+    }
+    .fixBanner.active{
+        display: none;
+    }
+    .fixBanner > a{
+        line-height: 30px; color: white; font-size: 12px; text-decoration: none;
+    }
+    .fixBanner.active ~ .searchPanel,
+    .fixBanner.active ~ .CartPanel,
+    .fixBanner.active ~ .logoutAccPanel,
+    .fixBanner.active ~ .loginAccPanel,
+    .fixBanner.active ~ .emptyCartPanel{
+        top: 74px; transform: translateY(0); transition: transform 0.5s ease-in-out;
+    }
     div.searchPanel,
     div.CartPanel,
     div.logoutAccPanel,
     div.loginAccPanel,
     div.emptyCartPanel{
         position: fixed; left: 4px; top: 74px; width: calc(100% - 8px); background-color: white; padding: 100px 0; box-sizing: border-box;
-        box-shadow: 1px 1px 5px #acacac; z-index: 100;
+        box-shadow: 1px 1px 5px #acacac; z-index: 100; transform: translateY(30px);
     }
     div.CartPanel > input.btn_close,
     div.logoutAccPanel > input.btn_close,
@@ -231,12 +247,6 @@ section.finderContainer div:last-of-type h3{
     footer a{
         text-decoration: none;
     }
-    .fixBanner{
-        position: fixed; top: 0; left: 0; width: 100%; text-align: center; background-color: black; z-index: 10;
-    }
-    .fixBanner > a{
-        line-height: 30px; color: white; font-size: 12px; text-decoration: none;
-    }
     header{
         position: fixed; z-index: 1; padding:20px; top: 34px; left: 4px; transition: top 0.5s ease-in-out;
         width: calc(100% - 8px); display: flex; align-items: center; box-sizing: border-box;
@@ -281,11 +291,11 @@ section.finderContainer div:last-of-type h3{
         display: none;
     }
     header > button.mui.active + nav{
-        display: flex; flex-direction: column; justify-content: space-between; position: fixed; width: calc(100% - 8px); height: calc(100% - 8px); padding: 0 0 50px; box-sizing: border-box; background-color: white; left: 4px; top: 104px;
+        display: flex; flex-direction: column; justify-content: space-between; position: fixed; width: calc(100% - 8px); height: calc(100% - 54px); padding: 0 0 50px; box-sizing: border-box; background-color: white; left: 4px; top: 104px;
         overflow: auto; z-index: 1; transition: top 0.5s ease-in-out;
     }
     header.active > button.mui.active + nav{
-        top: 70px;
+        top: 74px; height: calc(100% - 84px);
     }
     header > nav > ul > li{
         position: relative; padding: 0 25px;
@@ -518,13 +528,29 @@ section.finderContainer div:last-of-type h3{
     section[class*="920p"] > div{
         padding: 0 40px; margin: 0 auto; box-sizing: border-box;
     }
+    .fixBanner{
+        display: block; position: fixed; top: 0; left: 0; width: 100%; text-align: center; background-color: black; z-index: 10;
+    }
+    .fixBanner.active{
+        display: none;
+    }
+    .fixBanner > a{
+        line-height: 40px; color: white; font-size: 14px; text-decoration: none;
+    }
+    .fixBanner.active ~ .searchPanel,
+    .fixBanner.active ~ .CartPanel,
+    .fixBanner.active ~ .logoutAccPanel,
+    .fixBanner.active ~ .loginAccPanel,
+    .fixBanner.active ~ .emptyCartPanel{
+        top: 76px; transform: translateY(0); transition: transform 0.5s ease-in-out;
+    }
     div.searchPanel,
     div.CartPanel,
     div.logoutAccPanel,
     div.loginAccPanel,
     div.emptyCartPanel{
         position: fixed; left: 6px; top: 76px; width: calc(100% - 12px); background-color: white; padding: 100px 0; box-sizing: border-box;
-        box-shadow: 1px 1px 5px #acacac; z-index: 100;
+        box-shadow: 1px 1px 5px #acacac; z-index: 100; transform: translateY(40px);
     }
     div.CartPanel > input.btn_close,
     div.logoutAccPanel > input.btn_close,
@@ -652,12 +678,6 @@ section.finderContainer div:last-of-type h3{
     footer a{
         text-decoration: none;
     }
-    .fixBanner{
-        position: fixed; top: 0; left: 0; width: 100%; text-align: center; background-color: black; z-index: 10;
-    }
-    .fixBanner > a{
-        line-height: 40px; color: white; font-size: 14px; text-decoration: none;
-    }
     header{
         position: fixed; z-index: 1; padding:20px; top: 46px; left: 6px; transition: top 0.5s ease-in-out;
         width: calc(100% - 12px); display: flex; align-items: center; box-sizing: border-box;
@@ -666,16 +686,16 @@ section.finderContainer div:last-of-type h3{
         top: 6px;
     }
     header h1{
-        width: 5.5%; min-width: 99px; margin: 0 auto; position: relative; z-index: 100; height: 30px;
+        width: 100%; min-width: 99px; position: relative; z-index: 100;
     }
     header h1 a{
-        display: block;
+        display: block; margin: 0 auto; width: 99px;
     }
     header h1 a img{
-        width: 100%; max-width: 99px;
+        width: 100%; display: block;
     }
     header > button.mui{
-        position: fixed; border: none; height: 16px; width: 25px; background-color: transparent; display: block; z-index: 10; padding: 0;
+        position: fixed; border: none; height: 16px; width: 25px; background-color: transparent; display: block; z-index: 1000; padding: 0;
     }
     header > button.mui > span{
         position: absolute; display: block; background-color: black; height: 2px; border-radius: 1px; width: 100%; transition: transform .5s;
@@ -702,11 +722,11 @@ section.finderContainer div:last-of-type h3{
         display: none;
     }
     header > button.mui.active + nav{
-        display: flex; flex-direction: column; justify-content: space-between; position: fixed; width: calc(100% - 12px); height: calc(100% - 6px); padding: 0 0 50px; box-sizing: border-box; background-color: white; left: 6px; top: 116px;
+        display: flex; flex-direction: column; justify-content: space-between; position: fixed; width: calc(100% - 12px); height: calc(100% - 126px); padding: 0 0 50px; box-sizing: border-box; background-color: white; left: 6px; top: 116px;
         overflow-y: scroll; z-index: 1; transition: top 0.5s ease-in-out;
     }
     header.active > button.mui.active + nav{
-        top: 70px;
+        top: 76px; height: calc(100% - 86px);
     }
     header > nav > ul > li{
         padding: 0 25px;
@@ -934,9 +954,25 @@ section.finderContainer div:last-of-type h3{
     section[class*="920p"]{
         max-width: 920px; margin: 0 auto;
     }
+    .fixBanner{
+        display: block; position: fixed; top: 0; left: 0; width: 100%; text-align: center; background-color: black; z-index: 10;
+    }
+    .fixBanner.active{
+        display: none;
+    }
+    .fixBanner > a{
+        line-height: 40px; color: white; font-size: 14px; text-decoration: none;
+    }
+    .fixBanner.active ~ .searchPanel,
+    .fixBanner.active ~ .CartPanel,
+    .fixBanner.active ~ .logoutAccPanel,
+    .fixBanner.active ~ .loginAccPanel,
+    .fixBanner.active ~ .emptyCartPanel{
+        top: 79px; transform: translateY(0); transition: transform 0.5s ease-in-out;
+    }
     div.searchPanel{
-        position: fixed; left: 10px; top: 119px; background-color: white; width: calc(100% - 20px); padding: 145px 65px 2%;
-        box-sizing: border-box; z-index: 10; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        position: fixed; left: 10px; top: 79px; background-color: white; width: calc(100% - 20px); padding: 145px 65px 2%;
+        box-sizing: border-box; z-index: 10; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; transform: translateY(40px);
     }
     div.searchPanel input[type=search]{
         line-height: 55px; width: 65%; border-width: 0 0 1px 0; border-style: solid; border-color: #dcdcdc;
@@ -948,8 +984,8 @@ section.finderContainer div:last-of-type h3{
     div.logoutAccPanel,
     div.loginAccPanel,
     div.emptyCartPanel{
-        position: fixed; right: 10px; top: 119px; background-color: white; width: 24.5%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        padding: 100px 30px 1.5%; z-index: 10;
+        position: fixed; right: 10px; top: 79px; background-color: white; width: 24.5%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 100px 30px 1.5%; z-index: 10; transform: translateY(40px);
     }
     div.CartPanel > input.btn_close,
     div.logoutAccPanel > input.btn_close,
@@ -1063,12 +1099,6 @@ section.finderContainer div:last-of-type h3{
     div.loginAccPanel span a:first-of-type:hover,
     div.loginAccPanel span a:last-of-type{
         text-decoration: none;
-    }
-    .fixBanner{
-        position: fixed; top: 0; left: 0; width: 100%; text-align: center; background-color: black; z-index: 10;
-    }
-    .fixBanner > a{
-        line-height: 40px; color: white; font-size: 14px; text-decoration: none;
     }
     header a,
     footer a{

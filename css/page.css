@@ -3636,7 +3636,7 @@
         width: 57%; padding-left: 43%; max-width: 320px; padding-bottom: 50px;
     }
     div.rundownPanel{
-        position: absolute; right: 6px; width: 50%; background-color: white; z-index: 100;
+        position: absolute; right: 6px; width: 50%; background-color: white; z-index: 1;
     }
     div.rundownPanel > img:first-of-type{
         width: 100%; display: block; margin-bottom: 35px;
@@ -6968,8 +6968,8 @@
         clear: both;
     }
     div.sizeChartPanel{
-        position: absolute; right: 10px; top: 10px; width: 33%; background-color: white; z-index: 100;  
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;     
+        position: absolute; right: 10px; top: 119px; width: 33%; background-color: white; z-index: 1; 
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;           
     }
     div.sizeChartPanel h2,
     div.rundownPanel h2,
@@ -7017,7 +7017,7 @@
         width: 57%; padding-left: 43%; max-width: 320px; padding-bottom: 50px;
     }
     div.rundownPanel{
-        position: absolute; right: 10px; width: 26%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; background-color: white; z-index: 100;
+        position: absolute; right: 10px; width: 26%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; background-color: white; z-index: 1;
     }
     div.rundownPanel > img:first-of-type{
         width: 100%; display: block; margin-bottom: 35px;
@@ -7035,7 +7035,7 @@
         padding-bottom: 35px;
     }
     div.addPhotoPanel{
-        position: absolute; width: 26%; background-color: white; z-index: 100; left: 37%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        position: absolute; width: 26%; background-color: white; z-index: 1; left: 37%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     div.addPhotoPanel ol{
         list-style: none; padding: 25px 9%; display: flex; border-bottom: 1px; border-color: #eaeaea; border-style: solid;
@@ -7144,7 +7144,7 @@
         margin-bottom: 55px;
     }
     div[class*='humanFlyPopup']{
-        width: 46%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; position: absolute; left: 25%; background-color: white; z-index: 100;
+        width: 46%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; position: absolute; left: 25%; background-color: white; z-index: 1;
         padding: 0 2% 30px;
     }
     div[class*='humanFlyPopup']:after{
