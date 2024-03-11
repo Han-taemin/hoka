@@ -935,7 +935,7 @@ section.finderContainer div:last-of-type h3{
         max-width: 920px; margin: 0 auto;
     }
     div.searchPanel{
-        position: fixed; left: 10px; top: 70px; background-color: white; width: calc(100% - 20px); padding: 145px 65px 2%;
+        position: fixed; left: 10px; top: 119px; background-color: white; width: calc(100% - 20px); padding: 145px 65px 2%;
         box-sizing: border-box; z-index: 10; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     div.searchPanel input[type=search]{
@@ -948,7 +948,7 @@ section.finderContainer div:last-of-type h3{
     div.logoutAccPanel,
     div.loginAccPanel,
     div.emptyCartPanel{
-        position: fixed; right: 10px; top: 70px; background-color: white; width: 24.5%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        position: fixed; right: 10px; top: 119px; background-color: white; width: 24.5%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         padding: 100px 30px 1.5%; z-index: 10;
     }
     div.CartPanel > input.btn_close,
