@@ -126,7 +126,7 @@ section.finderContainer div:last-of-type h3{
     div.loginAccPanel > input.btn_close,
     div.emptyCartPanel > input.btn_close,
     div.searchPanel > input.btn_close{
-        border: none; background-color: transparent; position: absolute; left: 20px; top: 20px; padding: 0;
+        border: none; background-color: transparent; position: absolute; right: 20px; top: 20px; padding: 0;
     }
     div.searchPanel input[type=search]{
         width: 80%; border: 1px solid #dcdcdc; display: block; margin: 0 auto; line-height: 55px; padding-left: 40px; background: url("../images/Seach.svg") no-repeat 5px center;
@@ -564,7 +564,7 @@ section.finderContainer div:last-of-type h3{
     div.loginAccPanel > input.btn_close,
     div.emptyCartPanel > input.btn_close,
     div.searchPanel > input.btn_close{
-        border: none; background-color: transparent; position: absolute; left: 20px; top: 20px; padding: 0;
+        border: none; background-color: transparent; position: absolute; right: 20px; top: 20px; padding: 0;
     }
     div.searchPanel input[type=search]{
         width: 65%; border: 1px solid #dcdcdc; display: block; margin: 0 auto; line-height: 55px; padding-left: 55px; background: url("../images/Seach.svg") no-repeat 10px center;
@@ -1006,7 +1006,7 @@ section.finderContainer div:last-of-type h3{
     div.loginAccPanel > input.btn_close,
     div.emptyCartPanel > input.btn_close,
     div.searchPanel > input.btn_close{
-        border: none; background-color: transparent; position: absolute; left: 20px; top: 20px; padding: 0;
+        border: none; background-color: transparent; position: absolute; right: 20px; top: 20px; padding: 0;
     }
     div.emptyCartPanel{
         padding-bottom: 100px; 
