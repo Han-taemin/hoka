@@ -130,6 +130,7 @@ section.finderContainer div:last-of-type h3{
     }
     div.searchPanel input[type=search]{
         width: 80%; border: 1px solid #dcdcdc; display: block; margin: 0 auto; line-height: 55px; padding-left: 40px; background: url("../images/Seach.svg") no-repeat 5px center;
+        font-size: 12px; font-weight: 400; color: #757575;
     }
     div.searchPanel input[type=search]::placeholder{
         font-size: 12px; font-weight: 400; color: #757575;
@@ -567,10 +568,10 @@ section.finderContainer div:last-of-type h3{
         border: none; background-color: transparent; position: absolute; right: 20px; top: 20px; padding: 0;
     }
     div.searchPanel input[type=search]{
-        width: 65%; border: 1px solid #dcdcdc; display: block; margin: 0 auto; line-height: 55px; padding-left: 55px; background: url("../images/Seach.svg") no-repeat 10px center;
+        width: 65%; border: 1px solid #dcdcdc; display: block; margin: 0 auto; line-height: 55px; font-size: 18px; background: url("../images/Seach.svg") no-repeat 10px center; padding-left: 55px;  
     }
     div.searchPanel input[type=search]::placeholder{
-        font-size: 14px; font-weight: 400; color: #757575;
+        font-size: 18px; font-weight: 400; color: #757575; 
     }
     div.emptyCartPanel p{
         font-size: 20px; font-weight: 200;
@@ -989,10 +990,11 @@ section.finderContainer div:last-of-type h3{
         box-sizing: border-box; z-index: 10; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; transform: translateY(40px);
     }
     div.searchPanel input[type=search]{
-        line-height: 55px; width: 65%; border-width: 0 0 1px 0; border-style: solid; border-color: #dcdcdc;
+        line-height: 55px; width: 65%; border-width: 0 0 1px 0; border-style: solid; border-color: #dcdcdc; font-size: 28px; box-sizing: border-box;
+        padding-left: 60px; background: url("../images/Seach.svg") no-repeat 15px center;
     }
     div.searchPanel input[type=search]::placeholder{
-        font-size: 28px; font-weight: 400; padding-left: 55px; color: #757575; background: url("../images/Seach.svg") no-repeat left center;
+        font-size: 28px; font-weight: 400; color: #757575;
     }
     div.CartPanel,
     div.logoutAccPanel,
