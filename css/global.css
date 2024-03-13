@@ -1151,7 +1151,7 @@ section.finderContainer div:last-of-type h3{
     }
     header > nav > ul > li > a,
     header > nav > ul > li > strong{
-        color: white; font-size: 12px; font-weight: 500; line-height: 26px; display: block; position: relative; transition: color 0.5s ease-in-out;
+        color: white; font-size: 12px; font-weight: 500; line-height: 29px; display: block; position: relative; transition: color 0.5s ease-in-out;
     }
     header > nav > ul > li > a::after,
     header > nav > ul > li > strong::after,
@@ -1172,7 +1172,7 @@ section.finderContainer div:last-of-type h3{
         color: black; cursor: pointer;
     }
     header nav ul li ol{
-        position: fixed; left: 0; top: 69px; opacity: 0; width: calc(100% - 40px); padding: 80px 20px;  background-color: white; 
+        position: fixed; left: 0; top: 49px; opacity: 0; width: calc(100% - 40px); padding: 80px 20px;  background-color: white; 
         transform: scaleY(0); transform-origin: top; transition: all 0.5s ease-in-out;
     }
     header nav ul li:hover ol{
