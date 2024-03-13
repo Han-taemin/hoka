@@ -292,12 +292,12 @@ section.finderContainer div:last-of-type h3{
         display: none;
     }
     header > button.mui.active + nav{
-        display: flex; flex-direction: column; justify-content: space-between; position: fixed; width: calc(100% - 8px); height: calc(100% - 54px); padding: 0 0 50px; box-sizing: border-box; background-color: white; left: 4px; top: 102px;
+        display: flex; flex-direction: column; justify-content: space-between; position: fixed; width: calc(100% - 8px); height: calc(100% - 106px); box-sizing: border-box; background-color: white; left: 4px; top: 102px;
         z-index: 1; transition: top 0.5s ease-in-out;
     }
     header.active > button.mui.active + nav,
     header.active > nav > ul > li > ol{
-        top: 72px; height: calc(100% - 84px);
+        top: 72px; height: calc(100% - 76px);
     }
     header > .mui.active + nav::after{
         display: block; content: ""; position: fixed; width: calc(100% - 8px); height: 70px; top: 34px; left: 4px;
