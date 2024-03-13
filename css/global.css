@@ -292,11 +292,12 @@ section.finderContainer div:last-of-type h3{
         display: none;
     }
     header > button.mui.active + nav{
-        display: flex; flex-direction: column; justify-content: space-between; position: fixed; width: calc(100% - 8px); height: calc(100% - 54px); padding: 0 0 50px; box-sizing: border-box; background-color: white; left: 4px; top: 104px;
+        display: flex; flex-direction: column; justify-content: space-between; position: fixed; width: calc(100% - 8px); height: calc(100% - 54px); padding: 0 0 50px; box-sizing: border-box; background-color: white; left: 4px; top: 102px;
         overflow: auto; z-index: 1; transition: top 0.5s ease-in-out;
     }
-    header.active > button.mui.active + nav{
-        top: 74px; height: calc(100% - 84px);
+    header.active > button.mui.active + nav,
+    header.active > nav > ul > li > ol.active{
+        top: 72px; height: calc(100% - 84px);
     }
     header > .mui.active + nav::after{
         display: block; content: ""; position: fixed; width: calc(100% - 8px); height: 70px; top: 34px; left: 4px;
@@ -306,7 +307,7 @@ section.finderContainer div:last-of-type h3{
         top: 4px;
     }
     header > nav > ul > li{
-        position: relative; padding: 0 25px;
+        padding: 0 15px;
     }
     header > nav > ul > li{
         border-top: 1px solid #eaeaea;
@@ -316,60 +317,77 @@ section.finderContainer div:last-of-type h3{
     }
     header > nav > ul > li > a,
     header > nav > ul > li > strong{
-        color: black; font-size: 14px; font-weight: 400; line-height: 65px; display: block; background: url("../images/next_btn.svg") no-repeat right center;
+        color: black; font-size: 14px; font-weight: 400; line-height: 65px; display: block; background: url("../images/next_btn.svg") no-repeat right center; cursor: pointer;
     }
-    header > nav > ul > li > a:hover,
-    header > nav > ul > li > strong:hover,
-    header > nav > ul > li:last-of-type ol > li:hover > b{
-        background: url("../images/remove_btn.svg") no-repeat right center;
+    header > nav > ul > li > strong.active{
+        position: absolute; top: 0; left: 10px; width: 20px; line-height: 50px; text-indent: -9999px; z-index: 10; transition: top 0.5s ease-in-out;
+    }
+    header > nav > ul > li > strong::after{
+        display: none; content: ""; width: 20px; line-height: 50px; background: url("../images/prev_btn.svg") no-repeat center;
+    }
+    header > nav > ul > li > strong.active::after{
+        display: block;
     }
     header > nav > ul > li > ol{
-        display: none; list-style: none;
+        list-style: none; position: fixed; width: calc(100% - 8px); height: calc(100% - 54px); top: 102px; left: 4px; background-color: white;
+        transform: translate(100%); opacity: 0; transition: top 0.5s ease-in-out,transform 0.5s ease-in-out; 
     }
-    header > nav > ul > li:hover ol{
-        display: block;
+    header > nav > ul > li > ol.active{
+        transform: translate(0); opacity: 1; z-index: 1;
     }
-    header > nav > ul > li:not(:last-of-type):hover ol li a:after,
-    header > nav > ul > li:last-of-type ol > li > b,
-    header > nav > ul > li:last-of-type ol > li > a{
-        display: block; font-size: 14px; color: #515151; line-height: 65px; font-weight: 400; 
+    header > nav > ul > li > ol.active::before{
+    display: block; font-size: 18px; line-height: 50px; font-weight: 500; padding-left: 40px;    
     }
-    header nav > ul > li:not(:last-of-type):hover ol li:first-of-type,
-    header nav > ul > li:last-of-type ol > li > a:first-of-type{
-        border-top: 1px solid #515151;
+    header > nav > ul > li:last-of-type > ol{
+        overflow: auto;
     }
-    header nav > ul > li:not(:last-of-type):hover ol li:last-of-type,
-    header nav > ul > li:last-of-type ol > li > a:last-of-type{
-        border-bottom: 1px solid #515151;
+    header > nav > ul > li:nth-of-type(2) > ol.active::before{
+        content: "Women";
     }
-    header > nav > ul > li:not(:last-of-type):hover ol li:first-of-type a:after{
-        content: "All Footwear";
+    header > nav > ul > li:nth-of-type(3) > ol.active::before{
+        content: "Men";
     }
-    header > nav > ul > li:not(:last-of-type):hover ol li:nth-of-type(2) a:after{
-        content: "New In";
+    header > nav > ul > li:last-of-type > ol.active::before{
+        content: "Explore";
     }
-    header > nav > ul > li:not(:last-of-type):hover ol li:nth-of-type(3) a:after{
-        content: "Running";
+    header > nav > ul > li:not(:first-of-type) > ol > li{
+        padding: 0 15px; border-style: solid; border-color: #eaeaea; box-sizing: border-box;
     }
-    header > nav > ul > li:not(:last-of-type):hover ol li:last-of-type a:after{
-        content: "Hiking";
+    header > nav > ul > li:not(:first-of-type) > ol > li:first-of-type{
+        border-width: 1px 0;
     }
-    header > nav > ul > li:last-of-type ol{
-        width: 95%;
-    }
-    header > nav > ul > li:last-of-type ol > li > b{
-        background: url("../images/dropDown.svg") no-repeat right center;
-    }
-    header > nav > ul > li:last-of-type ol > li > a{
-        display: none;
-    }
-    header > nav > ul > li:last-of-type ol > li:hover > a{
-        display: block;
+    header > nav > ul > li:not(:first-of-type) > ol > li:not(:first-of-type){
+        border-width: 0 0 1px 0;
     }
     header > nav > ul > li > ol > li > a > img,
     header > nav > ul > li > ol > li > p,
     header > nav > ul > li > ol > li > strong{
         display: none;
+    }
+    header > nav > ul > li:not(:last-of-type) > ol > li > a::after,
+    header > nav > ul > li:last-of-type > ol > li > b{
+        display: block; font-size: 14px; font-weight: 400; line-height: 65px; color: black; cursor: pointer; background: url("../images/dropDown.svg") no-repeat right center;
+    }
+    header > nav > ul > li:last-of-type > ol > li > a{
+        font-size: 12px; font-weight: 400; line-height: 65px; color: #acacac; display: none;
+    }
+    header > nav > ul > li:last-of-type > ol > li.active > b{
+        background: url("../images/remove_btn.svg") no-repeat right center;
+    }
+    header > nav > ul > li:last-of-type > ol > li.active > a{
+        display: block;
+    }
+    header > nav > ul > li:not(:last-of-type) > ol > li:first-of-type > a::after{
+        content: "All Footwear";
+    }
+    header > nav > ul > li:not(:last-of-type) > ol > li:nth-of-type(2) > a::after{
+        content: "New In";     
+    }
+    header > nav > ul > li:not(:last-of-type) > ol > li:nth-of-type(3) > a::after{
+        content: "Running";     
+    }
+    header > nav > ul > li:not(:last-of-type) > ol > li:last-of-type > a::after{
+        content: "Hiking";
     }
     header > nav > div{
         margin-top: auto;
@@ -733,7 +751,8 @@ section.finderContainer div:last-of-type h3{
         display: flex; flex-direction: column; justify-content: space-between; position: fixed; width: calc(100% - 12px); height: calc(100% - 126px); padding: 0 0 50px; box-sizing: border-box; background-color: white; left: 6px; top: 116px;
         overflow-y: scroll; z-index: 1; transition: top 0.5s ease-in-out;
     }
-    header.active > button.mui.active + nav{
+    header.active > button.mui.active + nav,
+    header.active > nav > ul > li > ol{
         top: 76px; height: calc(100% - 86px);
     }
     header > .mui.active + nav::after{
@@ -754,60 +773,77 @@ section.finderContainer div:last-of-type h3{
     }
     header > nav > ul > li > a,
     header > nav > ul > li > strong{
-        color: black; font-size: 14px; font-weight: 400; line-height: 65px; display: block; background: url("../images/next_btn.svg") no-repeat right center;
+        color: black; font-size: 14px; font-weight: 400; line-height: 65px; display: block; background: url("../images/next_btn.svg") no-repeat right center; cursor: pointer;
     }
-    header > nav > ul > li > a:hover,
-    header > nav > ul > li > strong:hover,
-    header > nav > ul > li:last-of-type ol > li:hover b{
-        background: url("../images/remove_btn.svg") no-repeat right center;
+    header > nav > ul > li > strong.active{
+        position: absolute; top: 0; left: 20px; width: 20px; line-height: 50px; text-indent: -9999px; z-index: 1;
+    }
+    header > nav > ul > li > strong::after{
+        display: none; content: ""; width: 20px; line-height: 50px; background: url("../images/prev_btn.svg") no-repeat center;
+    }
+    header > nav > ul > li > strong.active::after{
+        display: block;
     }
     header > nav > ul > li > ol{
-        display: none; list-style: none;
+        list-style: none; position: fixed; width: calc(100% - 12px); height: calc(100% - 126px); top: 116px; left: 6px; background-color: white;
+        transform: translate(100%); opacity: 0; transition: top 0.5s ease-in-out,transform 0.5s ease-in-out;
     }
-    header > nav > ul > li:hover ol{
+    header > nav > ul > li > ol.active{
+        transform: translate(0); opacity: 1;
+    }
+    header > nav > ul > li > ol.active::before{
+    display: block; font-size: 18px; line-height: 50px; font-weight: 500; padding-left: 50px;    
+    }
+    header > nav > ul > li:last-of-type > ol{
+        overflow: auto;
+    }
+    header > nav > ul > li:nth-of-type(2) > ol.active::before{
+        content: "Women";
+    }
+    header > nav > ul > li:nth-of-type(3) > ol.active::before{
+        content: "Men";
+    }
+    header > nav > ul > li:last-of-type > ol.active::before{
+        content: "Explore";
+    }
+    header > nav > ul > li:not(:first-of-type) > ol > li{
+        padding: 0 25px; border-style: solid; border-color: #eaeaea; box-sizing: border-box;
+    }
+    header > nav > ul > li:not(:first-of-type) > ol > li:first-of-type{
+        border-width: 1px 0;
+    }
+    header > nav > ul > li:not(:first-of-type) > ol > li:not(:first-of-type){
+        border-width: 0 0 1px 0;
+    }
+    header > nav > ul > li > ol > li > a > img,
+    header > nav > ul > li > ol > li > p,
+    header > nav > ul > li > ol > li > strong{
+        display: none;
+    }
+    header > nav > ul > li:not(:last-of-type) > ol > li > a::after,
+    header > nav > ul > li:last-of-type > ol > li > b{
+        display: block; font-size: 14px; font-weight: 400; line-height: 65px; color: black; cursor: pointer; background: url("../images/dropDown.svg") no-repeat right center;
+    }
+    header > nav > ul > li:last-of-type > ol > li > a{
+        font-size: 12px; font-weight: 400; line-height: 65px; color: #acacac; display: none;
+    }
+    header > nav > ul > li:last-of-type > ol > li.active > b{
+        background: url("../images/remove_btn.svg") no-repeat right center;
+    }
+    header > nav > ul > li:last-of-type > ol > li.active > a{
         display: block;
     }
-    header > nav > ul > li:not(:last-of-type):hover ol li a:after,
-    header > nav > ul > li:last-of-type ol > li > b,
-    header > nav > ul > li:last-of-type ol > li > a{
-        display: block; font-size: 14px; color: #515151; line-height: 65px; font-weight: 400;
-    }
-    header nav > ul > li:not(:last-of-type):hover ol li:first-of-type,
-    header nav > ul > li:last-of-type ol > li > a:first-of-type{
-        border-top: 1px solid #515151;
-    }
-    header nav > ul > li:not(:last-of-type):hover ol li:last-of-type,
-    header nav > ul > li:last-of-type ol > li > a:last-of-type{
-        border-bottom: 1px solid #515151;
-    }
-    header nav > ul > li:not(:last-of-type):hover ol li:first-of-type a:after{
+    header > nav > ul > li:not(:last-of-type) > ol > li:first-of-type > a::after{
         content: "All Footwear";
     }
-    header nav > ul > li:not(:last-of-type):hover ol li:nth-of-type(2) a:after{
-        content: "New In";
+    header > nav > ul > li:not(:last-of-type) > ol > li:nth-of-type(2) > a::after{
+        content: "New In";     
     }
-    header nav > ul > li:not(:last-of-type):hover ol li:nth-of-type(3) a:after{
-        content: "Running";
+    header > nav > ul > li:not(:last-of-type) > ol > li:nth-of-type(3) > a::after{
+        content: "Running";     
     }
-    header nav > ul > li:not(:last-of-type):hover ol li:last-of-type a:after{
+    header > nav > ul > li:not(:last-of-type) > ol > li:last-of-type > a::after{
         content: "Hiking";
-    }
-    header nav > ul > li:last-of-type ol{
-        width: 95%;
-    }
-    header nav > ul > li:last-of-type ol > li > b{
-        background: url("../images/dropDown.svg") no-repeat right center;
-    }
-    header nav > ul > li:last-of-type ol > li > a{
-        display: none;
-    }
-    header nav > ul > li:last-of-type ol > li:hover > a{
-        display: block;
-    }
-    header nav > ul > li > ol > li > a > img,
-    header nav > ul > li > ol > li > p,
-    header nav > ul > li > ol > li > strong{
-        display: none;
     }
     header > nav > div{
         margin-top: auto;

@@ -1,8 +1,8 @@
 $(document).ready(function(){
     $("#videoBox").fitVids();
     justBack();
-    muiControl();
     navActive();
+    muiControl("header > nav > ul > li:not(:first-of-type) > strong");
     slider(".way3Carousel",3,590,35,false,true);
     slider(".humanFlySlider",6,290,20,false,false);
     slider("section.finderContainer ul",3,400,100,false,false);
@@ -18,6 +18,7 @@ $(document).ready(function(){
     panelControl(".detailContainer input[value='How to find my HOKA size']");
     panelControl("input[value='Add to Cart']");
     justToggle("section.storeContainer > div > div > ul > li")
+    parentToggle("header > nav > ul > li:last-of-type > ol > li > b");
     parentToggle("footer > div:nth-of-type(2) > div strong");
     parentToggle("footer > div:nth-of-type(2) > ul > li strong");
     parentToggle(".detailContainer ol li span");
@@ -132,14 +133,32 @@ function autoHeight(){
     target = $(".detailContainer > div > ul li video");
     $(target).css("height",applyVal);
 }
-function muiControl(){
+function muiControl(target){
     var mui = $("button.mui");
     $(mui).click(function(){
         $(this).toggleClass("active");
         $("header div input").click(function(){
-            mui.removeClass("active");
+            $(mui).removeClass("active");
         });
         $(mui).parent().siblings().not($("header,.fixBanner")).removeClass("active");
+        if($(mui).hasClass("active") == false){
+            $(target).removeClass("active");
+            $(target).siblings("ol").removeClass("active");
+            $("header > nav > ul > li:last-of-type > ol > li").removeClass("active");
+        }
+    });
+    $(target).click(function(){
+        if($(mui).hasClass("active")){
+            $(this).toggleClass("active");
+            if($(this).hasClass("active")){
+                $(this).siblings("ol").addClass("active");
+            }else{
+                $(this).siblings("ol").removeClass("active");
+            }
+        }else{
+            $(target).removeClass("active");
+            $(target).siblings("ol").removeClass("active");
+        }
     });
 }
 function popupOffset(target,positionT){
