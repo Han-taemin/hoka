@@ -326,7 +326,7 @@ section.finderContainer div:last-of-type h3{
         display: block;
     }
     header > nav > ul > li > ol{
-        list-style: none; position: fixed; width: calc(100% - 8px); height: calc(100% - 54px); top: 102px; left: 4px; background-color: white;
+        list-style: none; position: fixed; width: calc(100% - 8px); height: calc(100% - 106px); top: 102px; left: 4px; background-color: white;
         transform: translate(100%); opacity: 0; transition: top 0.5s ease-in-out,transform 0.5s ease-in-out; 
     }
     header > nav > ul > li > ol.active{
