@@ -568,7 +568,7 @@ section.finderContainer div:last-of-type h3{
         border: none; background-color: transparent; position: absolute; right: 20px; top: 20px; padding: 0;
     }
     div.searchPanel input[type=search]{
-        width: 65%; border: 1px solid #dcdcdc; display: block; margin: 0 auto; line-height: 55px; font-size: 18px; background: url("../images/Seach.svg") no-repeat 10px center; padding-left: 55px;  
+        width: 65%; border: 1px solid #dcdcdc; display: block; margin: 0 auto; line-height: 55px; font-size: 18px; background: url("../images/Seach.svg") no-repeat 10px center; padding-left: 50px;  
     }
     div.searchPanel input[type=search]::placeholder{
         font-size: 18px; font-weight: 400; color: #757575; 
