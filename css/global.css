@@ -1224,7 +1224,7 @@ section.finderContainer div:last-of-type h3{
         display: block; font-size: 14px; font-weight: 700; margin-bottom: 20px;
     }
     header nav ul li:last-of-type ol li a{
-        display: block; color: black; font-size: 12px; line-height: 22px; position: relative;
+        display: block; color: black; font-size: 12px; line-height: 22px;
     }
     header nav ul li:last-of-type ol li a:hover{
         text-decoration: underline;
