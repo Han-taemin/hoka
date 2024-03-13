@@ -1157,7 +1157,7 @@ section.finderContainer div:last-of-type h3{
     header > nav > ul > li > strong::after,
     footer > div:nth-of-type(2) > div:first-of-type > a::after,
     header nav ul li ol li strong::after{
-        position: absolute; display: block; content: ""; height: 1px; width: 100%; bottom: 0; left: 0; background-color: black; transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease-in-out;
+        display: block; content: ""; height: 1px; width: 100%; position: absolute; bottom: 0; left: 0; background-color: black; transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease-in-out;
     }
     header > nav > ul > li > a:hover::after,
     header > nav > ul > li > strong:hover::after,
@@ -1221,15 +1221,15 @@ section.finderContainer div:last-of-type h3{
         float: left; width: 15%;
     }
     header nav ul li:last-of-type ol li b{
-        display: block; font-size: 14px; font-weight: 700; margin-bottom: 20px;
+        font-size: 14px; font-weight: 700; margin-bottom: 20px; display: block;
     }
     header nav ul li:last-of-type ol li a{
-        display: block; color: black; font-size: 12px; line-height: 22px;
+        color: black; font-size: 12px; line-height: 22px; display: block;
     }
-    header nav ul li:last-of-type ol li a:hover{
+    header nav ul li:last-of-type > ol > li > a:hover{
         text-decoration: underline;
     }
-    header nav ul li:last-of-type ol li a:not(:last-of-type){
+    header nav ul li:last-of-type > ol > li > a:not(:last-of-type){
         margin-bottom: 10px;
     }
     header > nav > div{
