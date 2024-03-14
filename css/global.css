@@ -314,7 +314,7 @@ section.finderContainer div:last-of-type h3{
     }
     header > nav > ul > li > a,
     header > nav > ul > li > strong{
-        color: black; font-size: 14px; font-weight: 400; line-height: 65px; display: block; background: url("../images/next_btn.svg") no-repeat right center; cursor: pointer;
+        color: black; font-size: 14px; font-weight: 400; line-height: 65px; display: block; background: url("../images/prev_btn.svg") no-repeat right center; cursor: pointer;
     }
     header > nav > ul > li > strong.active{
         position: absolute; top: 0; left: 10px; width: 20px; line-height: 50px; text-indent: -9999px; z-index: 10;
@@ -767,7 +767,7 @@ section.finderContainer div:last-of-type h3{
     }
     header > nav > ul > li > a,
     header > nav > ul > li > strong{
-        color: black; font-size: 14px; font-weight: 400; line-height: 65px; display: block; background: url("../images/next_btn.svg") no-repeat right center; cursor: pointer;
+        color: black; font-size: 14px; font-weight: 400; line-height: 65px; display: block; background: url("../images/prev_btn.svg") no-repeat right center; cursor: pointer;
     }
     header > nav > ul > li > strong.active{
         position: absolute; top: 0; left: 20px; width: 20px; line-height: 50px; text-indent: -9999px; z-index: 1;
